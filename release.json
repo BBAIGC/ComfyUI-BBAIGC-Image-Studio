@@ -1,0 +1,11 @@
+{
+  "id": "image",
+  "version": "1.1.1",
+  "author": "BBAIGC",
+  "workflow": "workflows/BBAIGC_image_V1.1.1.json",
+  "sha256": "f77889a79fa831f0773eee2c57ad7fc506d05ef15c5a1541063ceda2a3134ae2",
+  "node_versions": {
+    "core": "1.2.2"
+  },
+  "notes": "语音自动分段与即时输入、BBAIGC标识、按需模型检查及工作流更新。"
+}

@@ -1,0 +1,8681 @@
+{
+  "revision": 2,
+  "last_node_id": 115,
+  "last_link_id": 150,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CodexQwenStudioControls",
+      "pos": [
+        0,
+        40
+      ],
+      "size": [
+        1100,
+        1015
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "控件映射",
+          "name": "控件映射",
+          "type": "STRING",
+          "widget": {
+            "name": "控件映射"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "字符串",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "BBAIGC 生图工作台 V1.1.1",
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioControls",
+        "codex_qwen_visible_loras": 6,
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "控件映射": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "codex_qwen_folds": {
+          "bbapi-connection": true,
+          "lora-1": false,
+          "base:prompt": true,
+          "finish:stage-output": true,
+          "lora-2": false,
+          "base:encoding": false
+        },
+        "codex_seed_modes": {
+          "40:种子": "fixed"
+        },
+        "bbaigc_baseline": "2026-10-29 21:22",
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "{\"route\": {\"node\": 10, \"widget\": \"模型路线\", \"values\": {\"normal\": \"Qwen Image 2.1\", \"turbo\": \"Qwen Image 2.1 Turbo\", \"moss\": \"MOSS\", \"bbapi\": \"BBAPI\", \"zimage\": \"Z-Image\", \"krea\": \"Krea 2 Turbo\"}}, \"fields\": [{\"node\": 10, \"widget\": \"模型路线\", \"label\": \"生成模型\", \"section\": \"base\", \"segment\": true, \"display\": {\"Qwen Image 2.1\": \"Qwen 2.1\", \"Qwen Image 2.1 Turbo\": \"Qwen Turbo\", \"MOSS\": \"MOSS\", \"BBAPI\": \"BBAPI\", \"Z-Image\": \"Z-Image\", \"Krea 2 Turbo\": \"Krea 2\"}}, {\"node\": 10, \"widget\": \"生成模式\", \"label\": \"生成模式\", \"section\": \"base\", \"segment\": true}, {\"node\": 28, \"widget\": \"比例\", \"label\": \"画布比例\", \"section\": \"base\"}, {\"node\": 28, \"widget\": \"尺寸基准\", \"label\": \"尺寸基准\", \"section\": \"base\"}, {\"node\": 28, \"widget\": \"长边\", \"label\": \"目标边像素\", \"section\": \"base\"}, {\"node\": 28, \"widget\": \"自定义宽度\", \"label\": \"自定义宽度\", \"section\": \"base\"}, {\"node\": 28, \"widget\": \"自定义高度\", \"label\": \"自定义高度\", \"section\": \"base\"}, {\"node\": 28, \"widget\": \"最长边上限\", \"label\": \"最长边上限\", \"section\": \"base\"}, {\"node\": 40, \"widget\": \"启用优化\", \"label\": \"提示词优化\", \"section\": \"base\"}, {\"node\": 40, \"widget\": \"详细程度\", \"label\": \"详细程度\", \"section\": \"base\"}, {\"node\": 40, \"widget\": \"语言模型\", \"label\": \"优化语言模型\", \"section\": \"base\"}, {\"node\": 40, \"widget\": \"输出上限\", \"label\": \"输出上限（token）\", \"section\": \"base\", \"group\": \"prompt\", \"group_title\": \"优化参数\"}, {\"node\": 40, \"widget\": \"上下文\", \"label\": \"上下文（token）\", \"section\": \"base\", \"group\": \"prompt\", \"group_title\": \"优化参数\"}, {\"node\": 40, \"widget\": \"温度\", \"label\": \"温度\", \"section\": \"base\", \"group\": \"prompt\", \"group_title\": \"优化参数\"}, {\"node\": 40, \"widget\": \"top_p\", \"label\": \"top_p\", \"section\": \"base\", \"group\": \"prompt\", \"group_title\": \"优化参数\"}, {\"node\": 23, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 1}, {\"node\": 23, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 1}, {\"node\": 23, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 1}, {\"node\": 24, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 2}, {\"node\": 24, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 2}, {\"node\": 24, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 2}, {\"node\": 25, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 3}, {\"node\": 25, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 3}, {\"node\": 25, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 3}, {\"node\": 50, \"widget\": \"启用修复\", \"label\": \"启用修复\", \"section\": \"finish\"}, {\"node\": 50, \"widget\": \"修复引擎\", \"label\": \"修复模型族\", \"section\": \"finish\", \"segment\": true}, {\"node\": 50, \"widget\": \"补充要求\", \"label\": \"补充要求\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 50, \"widget\": \"种子\", \"label\": \"种子\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 50, \"widget\": \"使用外接配置\", \"label\": \"使用外接配置\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 50, \"widget\": \"Image2模型\", \"label\": \"Image2模型\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2编码器\", \"label\": \"Image2编码器\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2VAE\", \"label\": \"Image2VAE\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2步数\", \"label\": \"Image2步数\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2CFG\", \"label\": \"Image2CFG\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2采样器\", \"label\": \"Image2采样器\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2调度器\", \"label\": \"Image2调度器\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2降噪\", \"label\": \"Image2降噪\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2缓存设备\", \"label\": \"Image2缓存设备\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2缓存精度\", \"label\": \"Image2缓存精度\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Image2编码器设备\", \"label\": \"Image2编码器设备\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Image2.1\"}}, {\"node\": 50, \"widget\": \"Krea模型\", \"label\": \"Krea模型\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"Krea编码器\", \"label\": \"Krea编码器\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"KreaVAE\", \"label\": \"KreaVAE\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"Krea步数\", \"label\": \"Krea步数\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"KreaCFG\", \"label\": \"KreaCFG\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"Krea采样器\", \"label\": \"Krea采样器\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"Krea调度器\", \"label\": \"Krea调度器\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"Krea降噪\", \"label\": \"Krea降噪\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"Krea编码器设备\", \"label\": \"Krea编码器设备\", \"section\": \"finish\", \"group\": \"repair-models\", \"group_title\": \"修复模型与采样\", \"condition\": {\"node\": 50, \"widget\": \"修复引擎\", \"equals\": \"Krea 2\"}}, {\"node\": 50, \"widget\": \"负面提示词\", \"label\": \"负面提示词\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 50, \"widget\": \"输入尺寸\", \"label\": \"输入尺寸\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 50, \"widget\": \"输入长边\", \"label\": \"输入长边\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 50, \"widget\": \"输出尺寸\", \"label\": \"输出尺寸\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 50, \"widget\": \"输出长边\", \"label\": \"输出长边\", \"section\": \"finish\", \"group\": \"repair\", \"group_title\": \"修复参数\"}, {\"node\": 52, \"widget\": \"启用超分\", \"label\": \"超分\", \"section\": \"finish\"}, {\"node\": 52, \"widget\": \"超分路线\", \"label\": \"超分路线\", \"section\": \"finish\", \"segment\": true}, {\"node\": 52, \"widget\": \"总倍率\", \"label\": \"超分倍率\", \"section\": \"finish\"}, {\"node\": 52, \"widget\": \"DLSS倍率\", \"label\": \"DLSS倍率\", \"section\": \"finish\"}, {\"node\": 52, \"widget\": \"VOSR倍率\", \"label\": \"VOSR倍率\", \"section\": \"finish\"}, {\"node\": 52, \"widget\": \"种子\", \"label\": \"种子\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"色彩校正\", \"label\": \"色彩校正\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"图像分块\", \"label\": \"图像分块\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"分块重叠\", \"label\": \"分块重叠\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"VAE分块\", \"label\": \"VAE分块\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"VAE重叠\", \"label\": \"VAE重叠\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"Seed模型\", \"label\": \"Seed模型\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"输入噪声\", \"label\": \"输入噪声\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"潜空间噪声\", \"label\": \"潜空间噪声\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"交换层数\", \"label\": \"交换层数\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"DLSS强度\", \"label\": \"DLSS强度\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"DLSS结构\", \"label\": \"DLSS结构\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 52, \"widget\": \"DLSS色彩\", \"label\": \"DLSS色彩\", \"section\": \"finish\", \"group\": \"upscale\", \"group_title\": \"超分参数\"}, {\"node\": 54, \"widget\": \"输出模式\", \"label\": \"输出模式\", \"section\": \"finish\", \"segment\": true}, {\"node\": 54, \"widget\": \"格式\", \"label\": \"格式\", \"section\": \"finish\", \"segment\": true}, {\"node\": 54, \"widget\": \"压缩质量\", \"label\": \"压缩质量\", \"section\": \"finish\", \"segment\": false}, {\"node\": 54, \"widget\": \"文件名前缀\", \"label\": \"文件名前缀\", \"section\": \"finish\", \"segment\": false}, {\"node\": 20, \"widget\": \"unet_name\", \"label\": \"普通版主模型\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"Qwen Image 2.1\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 21, \"widget\": \"unet_name\", \"label\": \"Turbo 主模型\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"Qwen Image 2.1 Turbo\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 26, \"widget\": \"clip_name\", \"label\": \"Qwen 编码器\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": [\"Qwen Image 2.1\", \"Qwen Image 2.1 Turbo\"]}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 27, \"widget\": \"vae_name\", \"label\": \"Qwen VAE\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": [\"Qwen Image 2.1\", \"Qwen Image 2.1 Turbo\"]}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 60, \"widget\": \"unet_name\", \"label\": \"MOSS 主模型\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"MOSS\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 63, \"widget\": \"clip_name\", \"label\": \"MOSS 编码器\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"MOSS\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 65, \"widget\": \"vae_name\", \"label\": \"MOSS VAE\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"MOSS\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 31, \"widget\": \"seed\", \"label\": \"随机种子\", \"section\": \"base\", \"profile_route\": \"normal\", \"profile_key\": \"seed\"}, {\"node\": 72, \"widget\": \"seed\", \"label\": \"随机种子\", \"section\": \"base\", \"profile_route\": \"moss\", \"profile_key\": \"seed\"}, {\"node\": 31, \"widget\": \"steps\", \"label\": \"采样步数\", \"section\": \"base\", \"profile_route\": \"normal\", \"profile_key\": \"steps\"}, {\"node\": 72, \"widget\": \"steps\", \"label\": \"采样步数\", \"section\": \"base\", \"profile_route\": \"moss\", \"profile_key\": \"steps\"}, {\"node\": 31, \"widget\": \"cfg\", \"label\": \"CFG\", \"section\": \"base\", \"profile_route\": \"normal\", \"profile_key\": \"cfg\"}, {\"node\": 72, \"widget\": \"cfg\", \"label\": \"CFG\", \"section\": \"base\", \"profile_route\": \"moss\", \"profile_key\": \"cfg\"}, {\"node\": 31, \"widget\": \"sampler_name\", \"label\": \"采样器\", \"section\": \"base\", \"profile_route\": \"normal\", \"profile_key\": \"sampler\"}, {\"node\": 72, \"widget\": \"sampler_name\", \"label\": \"采样器\", \"section\": \"base\", \"profile_route\": \"moss\", \"profile_key\": \"sampler\"}, {\"node\": 31, \"widget\": \"scheduler\", \"label\": \"调度器\", \"section\": \"base\", \"profile_route\": \"normal\", \"profile_key\": \"scheduler\"}, {\"node\": 72, \"widget\": \"scheduler\", \"label\": \"调度器\", \"section\": \"base\", \"profile_route\": \"moss\", \"profile_key\": \"scheduler\"}, {\"node\": 32, \"widget\": \"noise_seed\", \"label\": \"随机种子\", \"section\": \"base\", \"profile_route\": \"turbo\", \"profile_key\": \"seed\"}, {\"node\": 33, \"widget\": \"cfg\", \"label\": \"CFG\", \"section\": \"base\", \"profile_route\": \"turbo\", \"profile_key\": \"cfg\"}, {\"node\": 34, \"widget\": \"sampler_name\", \"label\": \"采样器\", \"section\": \"base\", \"profile_route\": \"turbo\", \"profile_key\": \"sampler\"}, {\"node\": 35, \"widget\": \"sigmas\", \"label\": \"Turbo 日程\", \"section\": \"base\", \"profile_route\": \"turbo\", \"profile_key\": \"sigmas\"}, {\"node\": 61, \"widget\": \"shift\", \"label\": \"MOSS 位移\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"MOSS\"}, \"group\": \"moss\", \"group_title\": \"MOSS 重绘参数\"}, {\"node\": 77, \"widget\": \"图生图降噪\", \"label\": \"图生图降噪\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"MOSS\"}, \"group\": \"moss\", \"group_title\": \"MOSS 重绘参数\"}, {\"node\": 79, \"widget\": \"value\", \"label\": \"主参考图序号\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": [\"MOSS\", \"Z-Image\"]}}, {\"node\": 67, \"widget\": \"text\", \"label\": \"MOSS 负面提示词\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"MOSS\"}, \"group\": \"moss\", \"group_title\": \"MOSS 重绘参数\"}, {\"node\": 29, \"widget\": \"resolution\", \"label\": \"Qwen 参考读取分辨率\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": [\"Qwen Image 2.1\", \"Qwen Image 2.1 Turbo\"]}, \"group\": \"encoding\", \"group_title\": \"图像编码\"}, {\"node\": 29, \"widget\": \"negative_prompt\", \"label\": \"Qwen 负面提示词\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": [\"Qwen Image 2.1\", \"Qwen Image 2.1 Turbo\"]}, \"group\": \"encoding\", \"group_title\": \"图像编码\"}, {\"node\": 80, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 4}, {\"node\": 80, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 4}, {\"node\": 80, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 4}, {\"node\": 81, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 5}, {\"node\": 81, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 5}, {\"node\": 81, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 5}, {\"node\": 82, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 6}, {\"node\": 82, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 6}, {\"node\": 82, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 6}, {\"node\": 83, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 7}, {\"node\": 83, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 7}, {\"node\": 83, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 7}, {\"node\": 84, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 8}, {\"node\": 84, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 8}, {\"node\": 84, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 8}, {\"node\": 85, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 9}, {\"node\": 85, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 9}, {\"node\": 85, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 9}, {\"node\": 86, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 10}, {\"node\": 86, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 10}, {\"node\": 86, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 10}, {\"node\": 87, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 11}, {\"node\": 87, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 11}, {\"node\": 87, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 11}, {\"node\": 88, \"widget\": \"启用LoRA\", \"label\": \"启用\", \"section\": \"lora\", \"slot\": 12}, {\"node\": 88, \"widget\": \"LoRA文件\", \"label\": \"LoRA 文件\", \"section\": \"lora\", \"slot\": 12}, {\"node\": 88, \"widget\": \"LoRA强度\", \"label\": \"强度\", \"section\": \"lora\", \"slot\": 12}, {\"node\": 73, \"widget\": \"配置名称\", \"label\": \"配置名称\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 73, \"widget\": \"接口地址\", \"label\": \"接口地址\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 73, \"widget\": \"默认模型\", \"label\": \"默认模型\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 73, \"widget\": \"超时秒\", \"label\": \"超时秒\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 74, \"widget\": \"模型\", \"label\": \"模型\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 74, \"widget\": \"分辨率\", \"label\": \"分辨率\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 74, \"widget\": \"质量\", \"label\": \"质量\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 74, \"widget\": \"重新生成编号\", \"label\": \"重新生成编号\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"BBAPI\"}, \"group\": \"bbapi\", \"group_title\": \"BBAPI 连接与生成\"}, {\"node\": 53, \"widget\": \"输出模式\", \"label\": \"生成原图输出\", \"section\": \"finish\", \"segment\": true, \"group\": \"stage-output\", \"group_title\": \"各阶段输出\"}, {\"node\": 55, \"widget\": \"输出模式\", \"label\": \"修复结果输出\", \"section\": \"finish\", \"segment\": true, \"group\": \"stage-output\", \"group_title\": \"各阶段输出\"}, {\"node\": 95, \"widget\": \"seed\", \"label\": \"随机种子\", \"section\": \"base\", \"profile_route\": \"zimage\", \"profile_key\": \"seed\"}, {\"node\": 95, \"widget\": \"steps\", \"label\": \"采样步数\", \"section\": \"base\", \"profile_route\": \"zimage\", \"profile_key\": \"steps\"}, {\"node\": 95, \"widget\": \"cfg\", \"label\": \"CFG\", \"section\": \"base\", \"profile_route\": \"zimage\", \"profile_key\": \"cfg\"}, {\"node\": 95, \"widget\": \"sampler_name\", \"label\": \"采样器\", \"section\": \"base\", \"profile_route\": \"zimage\", \"profile_key\": \"sampler\"}, {\"node\": 95, \"widget\": \"scheduler\", \"label\": \"调度器\", \"section\": \"base\", \"profile_route\": \"zimage\", \"profile_key\": \"scheduler\"}, {\"node\": 90, \"widget\": \"unet_name\", \"label\": \"Z-Image 主模型\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"Z-Image\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 91, \"widget\": \"clip_name\", \"label\": \"Z-Image 编码器\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"Z-Image\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 92, \"widget\": \"vae_name\", \"label\": \"Z-Image VAE\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"Z-Image\"}, \"group\": \"models\", \"group_title\": \"模型设置\"}, {\"node\": 103, \"widget\": \"shift\", \"label\": \"Z-Image 位移\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"Z-Image\"}, \"group\": \"zimage\", \"group_title\": \"Z-Image 重绘参数\"}, {\"node\": 101, \"widget\": \"图生图降噪\", \"label\": \"图生图降噪\", \"section\": \"base\", \"condition\": {\"node\": 10, \"widget\": \"模型路线\", \"equals\": \"Z-Image\"}, \"group\": \"zimage\", \"group_title\": \"Z-Image 重绘参数\"}, {\"node\": 40, \"widget\": \"输出语言\", \"label\": \"输出语言\", \"section\": \"base\", \"segment\": true}, {\"node\": 40, \"widget\": \"种子\", \"label\": \"优化种子\", \"section\": \"base\"}, {\"node\": 52, \"widget\": \"输入尺寸\", \"label\": \"超分前输入尺寸\", \"section\": \"finish\", \"segment\": true}, {\"node\": 52, \"widget\": \"输入长边\", \"label\": \"处理前输入长边\", \"section\": \"finish\", \"condition\": {\"node\": 52, \"widget\": \"输入尺寸\", \"equals\": \"自定义\"}}, {\"node\": 112, \"widget\": \"图像模型\", \"label\": \"Krea 2 主模型\", \"section\": \"base\", \"profile_route\": \"krea\", \"group\": \"krea-models\", \"group_title\": \"Krea 2 模型\"}, {\"node\": 114, \"widget\": \"文本编码器\", \"label\": \"Krea 2 编码器\", \"section\": \"base\", \"profile_route\": \"krea\", \"group\": \"krea-models\", \"group_title\": \"Krea 2 模型\"}, {\"node\": 114, \"widget\": \"VAE\", \"label\": \"Krea 2 VAE\", \"section\": \"base\", \"profile_route\": \"krea\", \"group\": \"krea-models\", \"group_title\": \"Krea 2 模型\"}, {\"node\": 114, \"widget\": \"种子\", \"label\": \"随机种子\", \"section\": \"base\", \"profile_route\": \"krea\", \"profile_key\": \"seed\"}, {\"node\": 114, \"widget\": \"步数\", \"label\": \"采样步数\", \"section\": \"base\", \"profile_route\": \"krea\", \"profile_key\": \"steps\"}, {\"node\": 114, \"widget\": \"CFG\", \"label\": \"CFG\", \"section\": \"base\", \"profile_route\": \"krea\", \"profile_key\": \"cfg\"}, {\"node\": 114, \"widget\": \"采样器\", \"label\": \"采样器\", \"section\": \"base\", \"profile_route\": \"krea\", \"profile_key\": \"sampler\"}, {\"node\": 114, \"widget\": \"调度器\", \"label\": \"调度器\", \"section\": \"base\", \"profile_route\": \"krea\", \"profile_key\": \"scheduler\"}, {\"node\": 114, \"widget\": \"图生图降噪\", \"label\": \"Krea 2 重绘降噪\", \"section\": \"base\", \"profile_route\": \"krea\", \"condition\": {\"node\": 10, \"widget\": \"生成模式\", \"equals\": \"图生图\"}}], \"bbapi_connection_node\": 73, \"bbapi_image_node\": 74, \"prompt_optimize_node\": 40}",
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "CodexQwenStudioReferences",
+      "pos": [
+        1130,
+        40
+      ],
+      "size": [
+        980,
+        500
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 1
+        },
+        {
+          "localized_name": "参考图1",
+          "name": "参考图1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "参考图库",
+          "name": "参考图库",
+          "type": "STRING",
+          "widget": {
+            "name": "参考图库"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "对比参考图编号",
+          "name": "对比参考图编号",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "对比参考图编号"
+          },
+          "link": 96
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "参考图集合",
+          "name": "参考图集合",
+          "type": "CODEX_REFERENCES",
+          "slot_index": 0,
+          "links": [
+            3,
+            4,
+            5,
+            6,
+            59,
+            89,
+            105,
+            142
+          ]
+        },
+        {
+          "localized_name": "所选参考图",
+          "name": "所选参考图",
+          "type": "IMAGE",
+          "slot_index": 1,
+          "links": [
+            63,
+            111
+          ]
+        }
+      ],
+      "title": "参考图库 · 拖入 / 粘贴 / 多张上传",
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioReferences",
+        "codex_reference_ports_expanded": false,
+        "codex_reference_port_layout": {
+          "baseHeight": 500,
+          "extraHeight": 0,
+          "moved": {}
+        },
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "参考图库": true,
+            "对比参考图编号": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "codex_next_reference_slot": 1,
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "[]",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "type": "CodexQwenStudioPrompt",
+      "pos": [
+        1130,
+        600
+      ],
+      "size": [
+        980,
+        915
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "参考图集",
+          "name": "参考图集",
+          "shape": 7,
+          "type": "CODEX_REFERENCES",
+          "link": 3
+        },
+        {
+          "localized_name": "原始提示词",
+          "name": "原始提示词",
+          "type": "STRING",
+          "widget": {
+            "name": "原始提示词"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "生成前置提示词",
+          "name": "生成前置提示词",
+          "type": "STRING",
+          "widget": {
+            "name": "生成前置提示词"
+          },
+          "link": 7
+        },
+        {
+          "name": "外接提示词",
+          "type": "STRING",
+          "link": 135
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "生图提示词",
+          "name": "生图提示词",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            10
+          ]
+        }
+      ],
+      "title": "提示词 · 原文与优化对照",
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioPrompt",
+        "codex_optimize_node": 40,
+        "codex_reference_node": 2,
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "原始提示词": true,
+            "生成前置提示词": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 4,
+      "type": "CodexQwenStudioRules",
+      "pos": [
+        0,
+        1117
+      ],
+      "size": [
+        1100,
+        395
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生图前置",
+          "name": "生图前置",
+          "type": "STRING",
+          "widget": {
+            "name": "生图前置"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "优化前置",
+          "name": "优化前置",
+          "type": "STRING",
+          "widget": {
+            "name": "优化前置"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "修复前置",
+          "name": "修复前置",
+          "type": "STRING",
+          "widget": {
+            "name": "修复前置"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "生图前置",
+          "name": "生图前置",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            7
+          ]
+        },
+        {
+          "localized_name": "优化前置",
+          "name": "优化前置",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            8
+          ]
+        },
+        {
+          "localized_name": "修复前置",
+          "name": "修复前置",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": [
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioRules",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "生图前置": true,
+            "优化前置": true,
+            "修复前置": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        "将用户输入整理为目标生图模型能准确执行的提示词，只输出最终提示词。保留主体、身份、数量、动作、表情、衣物覆盖、物体关系、画面左右、环境、构图、光照和明确限制。参考图1、图2、@图1等来源编号必须保持，不互换角色或添加未要求的人物、物件、剧情。用户中文输入默认输出中文，指定要出现在图上的文字逐字保留。去掉重复措辞和不适用于该模型的标签，但不删除关键需求；看不清或未给出的细节不要编造。不要输出分析、标题、解释、对白时间轴、帧率、S编号或视频镜头运动。",
+        "仅修复可见的不合理五官、手指、脚部、肢体比例、接触遮挡和衣物破损或接缝错误。保留同一人物身份、脸型、正常身体结构、原姿态、服装覆盖、构图、场景、光照及自然肤质。没有明确错误的位置维持原样，不改变服装覆盖，不增加人物或物件，不磨皮，不添加文字。",
+        "",
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 5,
+      "type": "CodexQwenStudioResults",
+      "pos": [
+        2170,
+        40
+      ],
+      "size": [
+        1055,
+        1475
+      ],
+      "flags": {},
+      "order": 76,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生成图",
+          "name": "生成图",
+          "type": "IMAGE",
+          "link": 39
+        },
+        {
+          "localized_name": "修复图",
+          "name": "修复图",
+          "type": "IMAGE",
+          "link": 95
+        },
+        {
+          "localized_name": "超分图",
+          "name": "超分图",
+          "type": "IMAGE",
+          "link": 40
+        },
+        {
+          "localized_name": "参考图集",
+          "name": "参考图集",
+          "shape": 7,
+          "type": "CODEX_REFERENCES",
+          "link": 6
+        },
+        {
+          "name": "修复已启用",
+          "type": "BOOLEAN",
+          "link": 133,
+          "widget": {
+            "name": "修复已启用"
+          }
+        },
+        {
+          "name": "超分已启用",
+          "type": "BOOLEAN",
+          "link": 134,
+          "widget": {
+            "name": "超分已启用"
+          }
+        }
+      ],
+      "outputs": [],
+      "title": "图像结果 · 阶段预览与对比",
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioResults",
+        "codex_stage_nodes": {
+          "generated": 53,
+          "repaired": 55,
+          "upscaled": 54
+        },
+        "codex_reference_node": 2,
+        "codex_repair_node": 50,
+        "codex_upscale_node": 52,
+        "codex_stage_output_nodes": {
+          "generated": 53,
+          "repaired": 55,
+          "upscaled": 54
+        },
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "codex_release_after_run": false,
+        "codex_auto_reveal": {
+          "generated": false,
+          "repaired": false,
+          "upscaled": false
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        false,
+        false
+      ]
+    },
+    {
+      "id": 10,
+      "type": "CodexQwenMode",
+      "pos": [
+        3420,
+        80
+      ],
+      "size": [
+        450,
+        202
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "COMBO",
+          "widget": {
+            "name": "生成模式"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "模型路线",
+          "name": "模型路线",
+          "type": "COMBO",
+          "widget": {
+            "name": "模型路线"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "是否Turbo",
+          "name": "是否Turbo",
+          "type": "BOOLEAN",
+          "slot_index": 0,
+          "links": [
+            12,
+            32
+          ]
+        },
+        {
+          "localized_name": "是否图生图",
+          "name": "是否图生图",
+          "type": "BOOLEAN",
+          "slot_index": 1,
+          "links": [
+            70,
+            116
+          ]
+        },
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": [
+            1,
+            2,
+            57,
+            73,
+            86,
+            103,
+            119,
+            141
+          ]
+        },
+        {
+          "localized_name": "是否MOSS",
+          "name": "是否MOSS",
+          "type": "BOOLEAN",
+          "slot_index": 3,
+          "links": [
+            53,
+            81
+          ]
+        },
+        {
+          "localized_name": "是否BBAPI",
+          "name": "是否BBAPI",
+          "type": "BOOLEAN",
+          "slot_index": 4,
+          "links": [
+            90
+          ]
+        },
+        {
+          "localized_name": "优化目标",
+          "name": "优化目标",
+          "type": "STRING",
+          "slot_index": 5,
+          "links": []
+        },
+        {
+          "localized_name": "是否ZImage",
+          "name": "是否ZImage",
+          "type": "BOOLEAN",
+          "slot_index": 6,
+          "links": [
+            98,
+            127
+          ]
+        },
+        {
+          "name": "是否Krea",
+          "localized_name": "是否Krea",
+          "type": "BOOLEAN",
+          "links": [
+            138,
+            149
+          ],
+          "slot_index": 7
+        }
+      ],
+      "title": "生成模式 · 五种模型路线",
+      "properties": {
+        "Node name for S&R": "CodexQwenMode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "生成模式": true,
+            "模型路线": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "文生图",
+        "Qwen Image 2.1 Turbo"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "CodexDeferredGGUFLoader",
+      "pos": [
+        3790,
+        80
+      ],
+      "size": [
+        450,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "主模型文件",
+          "localized_name": "主模型文件",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            13
+          ]
+        }
+      ],
+      "title": "普通版 · Qwen 2.1 UC GGUF",
+      "properties": {
+        "Node name for S&R": "CodexDeferredGGUFLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "unet_name": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "qwen-image-2.1-UC-Q6_K.gguf"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "CodexDeferredUNETLoader",
+      "pos": [
+        4160,
+        80
+      ],
+      "size": [
+        450,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "主模型文件",
+          "localized_name": "主模型文件",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "label": "权重精度",
+          "localized_name": "权重精度",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            14
+          ]
+        }
+      ],
+      "title": "Turbo · 官方8步模型",
+      "properties": {
+        "Node name for S&R": "CodexDeferredUNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "unet_name": true,
+            "weight_dtype": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "qwen_image_2.1_turbo_int8_convrot.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "ComfySwitchNode",
+      "pos": [
+        4530,
+        80
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 13
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 14
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            54
+          ]
+        }
+      ],
+      "title": "按需选择主模型 · 未选不加载",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 23,
+      "type": "CodexStudioLora",
+      "pos": [
+        4900,
+        80
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 139
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            15
+          ]
+        }
+      ],
+      "title": "LoRA 1 · 独立开关",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 24,
+      "type": "CodexStudioLora",
+      "pos": [
+        5270,
+        80
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 15
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            16
+          ]
+        }
+      ],
+      "title": "LoRA 2 · 独立开关",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 25,
+      "type": "CodexStudioLora",
+      "pos": [
+        3420,
+        134
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 16
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            41
+          ]
+        }
+      ],
+      "title": "LoRA 3 · 独立开关",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 26,
+      "type": "CodexDeferredCLIPLoader",
+      "pos": [
+        3790,
+        134
+      ],
+      "size": [
+        450,
+        190
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "文本编码器文件",
+          "localized_name": "文本编码器文件",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "编码器类型",
+          "localized_name": "编码器类型",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        },
+        {
+          "label": "运行设备",
+          "localized_name": "运行设备",
+          "name": "device",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "device"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "文本编码器",
+          "localized_name": "文本编码器",
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            17
+          ]
+        }
+      ],
+      "title": "Qwen 图像编码器",
+      "properties": {
+        "Node name for S&R": "CodexDeferredCLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "clip_name": true,
+            "type": true,
+            "device": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "qwen3vl_8b_int8_convrot.safetensors",
+        "qwen_image",
+        "default"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "CodexDeferredVAELoader",
+      "pos": [
+        4160,
+        134
+      ],
+      "size": [
+        450,
+        130
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "编解码器文件",
+          "localized_name": "编解码器文件",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像编解码器",
+          "localized_name": "图像编解码器",
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            18,
+            19
+          ]
+        }
+      ],
+      "title": "Qwen 图像 VAE",
+      "properties": {
+        "Node name for S&R": "CodexDeferredVAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "vae_name": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "qwen_image_2.1_vae_bf16.safetensors"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "CodexStudioCanvas",
+      "pos": [
+        4530,
+        134
+      ],
+      "size": [
+        340,
+        450
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "参考图",
+          "name": "参考图",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "参考图集",
+          "name": "参考图集",
+          "shape": 7,
+          "type": "CODEX_REFERENCES",
+          "link": 4
+        },
+        {
+          "localized_name": "比例",
+          "name": "比例",
+          "type": "COMBO",
+          "widget": {
+            "name": "比例"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "尺寸基准",
+          "name": "尺寸基准",
+          "type": "COMBO",
+          "widget": {
+            "name": "尺寸基准"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "目标边像素",
+          "name": "长边",
+          "type": "INT",
+          "widget": {
+            "name": "长边"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "自定义宽度",
+          "name": "自定义宽度",
+          "type": "INT",
+          "widget": {
+            "name": "自定义宽度"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "自定义高度",
+          "name": "自定义高度",
+          "type": "INT",
+          "widget": {
+            "name": "自定义高度"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "最长边上限",
+          "name": "最长边上限",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "最长边上限"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "宽度",
+          "name": "宽度",
+          "type": "INT",
+          "slot_index": 0,
+          "links": [
+            20,
+            64,
+            68,
+            87,
+            109,
+            112,
+            144
+          ]
+        },
+        {
+          "localized_name": "高度",
+          "name": "高度",
+          "type": "INT",
+          "slot_index": 1,
+          "links": [
+            21,
+            65,
+            69,
+            88,
+            110,
+            113,
+            145
+          ]
+        },
+        {
+          "localized_name": "尺寸说明",
+          "name": "尺寸说明",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": []
+        }
+      ],
+      "title": "画布 · 比例与尺寸",
+      "properties": {
+        "Node name for S&R": "CodexStudioCanvas",
+        "codex_reference_node": 2,
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "比例": true,
+            "尺寸基准": true,
+            "长边": true,
+            "自定义宽度": true,
+            "自定义高度": true,
+            "最长边上限": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "codex_canvas_size_preset": "1K",
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "3:4 竖",
+        "最长边",
+        1024,
+        768,
+        1024,
+        4096,
+        ""
+      ]
+    },
+    {
+      "id": 29,
+      "type": "CodexQwenStudioEncoder",
+      "pos": [
+        4900,
+        134
+      ],
+      "size": [
+        450,
+        490
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 17
+        },
+        {
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 18
+        },
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 2
+        },
+        {
+          "localized_name": "参考图集",
+          "name": "参考图集",
+          "shape": 7,
+          "type": "CODEX_REFERENCES",
+          "link": 5
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 11
+        },
+        {
+          "localized_name": "negative_prompt",
+          "name": "negative_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "negative_prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "INT",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "正面条件",
+          "name": "正面条件",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            22,
+            25
+          ]
+        },
+        {
+          "localized_name": "负面条件",
+          "name": "负面条件",
+          "type": "CONDITIONING",
+          "slot_index": 1,
+          "links": [
+            23,
+            26
+          ]
+        },
+        {
+          "localized_name": "参考尺寸空潜空间",
+          "name": "参考尺寸空潜空间",
+          "type": "LATENT",
+          "slot_index": 2,
+          "links": []
+        }
+      ],
+      "title": "共用编码 · 文生图 / 有序参考图",
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioEncoder",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true,
+            "negative_prompt": true,
+            "resolution": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        "",
+        1024,
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 30,
+      "type": "CodexQwenCanvasLatent",
+      "pos": [
+        5270,
+        134
+      ],
+      "size": [
+        450,
+        210
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 20
+        },
+        {
+          "localized_name": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 21
+        },
+        {
+          "localized_name": "batch_size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            24,
+            31
+          ]
+        }
+      ],
+      "title": "指定画布潜空间",
+      "properties": {
+        "Node name for S&R": "CodexQwenCanvasLatent",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "width": true,
+            "height": true,
+            "batch_size": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 31,
+      "type": "KSampler",
+      "pos": [
+        3420,
+        188
+      ],
+      "size": [
+        400,
+        410
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 59,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 50
+        },
+        {
+          "label": "正面条件",
+          "localized_name": "正面条件",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 22
+        },
+        {
+          "label": "负面条件",
+          "localized_name": "负面条件",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 23
+        },
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 24
+        },
+        {
+          "label": "随机种子",
+          "localized_name": "随机种子",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "label": "采样步数",
+          "localized_name": "采样步数",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "label": "提示词引导强度",
+          "localized_name": "提示词引导强度",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "label": "采样器",
+          "localized_name": "采样器",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "label": "调度器",
+          "localized_name": "调度器",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "label": "降噪强度",
+          "localized_name": "降噪强度",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            33
+          ]
+        }
+      ],
+      "title": "普通版采样",
+      "properties": {
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "seed": true,
+            "steps": true,
+            "cfg": true,
+            "sampler_name": true,
+            "scheduler": true,
+            "denoise": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        42,
+        "fixed",
+        25,
+        1,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 32,
+      "type": "RandomNoise",
+      "pos": [
+        3790,
+        188
+      ],
+      "size": [
+        450,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "噪声种子",
+          "localized_name": "噪声种子",
+          "name": "noise_seed",
+          "type": "INT",
+          "widget": {
+            "name": "noise_seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "噪波",
+          "name": "NOISE",
+          "type": "NOISE",
+          "slot_index": 0,
+          "links": [
+            27
+          ]
+        }
+      ],
+      "title": "Turbo 随机种子",
+      "properties": {
+        "Node name for S&R": "RandomNoise",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "noise_seed": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        42,
+        "fixed"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "CFGGuider",
+      "pos": [
+        4160,
+        188
+      ],
+      "size": [
+        400,
+        170
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 60,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 51
+        },
+        {
+          "label": "正面条件",
+          "localized_name": "正面条件",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 25
+        },
+        {
+          "label": "负面条件",
+          "localized_name": "负面条件",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 26
+        },
+        {
+          "label": "提示词引导强度",
+          "localized_name": "提示词引导强度",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "引导器",
+          "name": "GUIDER",
+          "type": "GUIDER",
+          "slot_index": 0,
+          "links": [
+            28
+          ]
+        }
+      ],
+      "title": "Turbo 提示词引导",
+      "properties": {
+        "Node name for S&R": "CFGGuider",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "cfg": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1
+      ]
+    },
+    {
+      "id": 34,
+      "type": "KSamplerSelect",
+      "pos": [
+        4530,
+        188
+      ],
+      "size": [
+        450,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "采样器",
+          "localized_name": "采样器",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "采样器",
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "slot_index": 0,
+          "links": [
+            29
+          ]
+        }
+      ],
+      "title": "Turbo 采样器",
+      "properties": {
+        "Node name for S&R": "KSamplerSelect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "sampler_name": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "euler"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "ManualSigmas",
+      "pos": [
+        4900,
+        188
+      ],
+      "size": [
+        450,
+        210
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "噪声级别序列",
+          "localized_name": "噪声级别序列",
+          "name": "sigmas",
+          "type": "STRING",
+          "widget": {
+            "name": "sigmas"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Sigmas",
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "slot_index": 0,
+          "links": [
+            30
+          ]
+        }
+      ],
+      "title": "Turbo 官方固定8步日程",
+      "properties": {
+        "Node name for S&R": "ManualSigmas",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "sigmas": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "1.0, 0.978453, 0.95418, 0.926626, 0.89508, 0.845148, 0.704534, 0.414568, 0"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "SamplerCustomAdvanced",
+      "pos": [
+        5270,
+        188
+      ],
+      "size": [
+        400,
+        220
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 63,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "噪声",
+          "localized_name": "噪声",
+          "name": "noise",
+          "type": "NOISE",
+          "link": 27
+        },
+        {
+          "label": "引导器",
+          "localized_name": "引导器",
+          "name": "guider",
+          "type": "GUIDER",
+          "link": 28
+        },
+        {
+          "label": "采样器",
+          "localized_name": "采样器",
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 29
+        },
+        {
+          "label": "噪声级别序列",
+          "localized_name": "噪声级别序列",
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 30
+        },
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            34
+          ]
+        },
+        {
+          "label": "降噪输出",
+          "localized_name": "降噪输出",
+          "name": "denoised_output",
+          "type": "LATENT",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "Turbo 八步采样",
+      "properties": {
+        "Node name for S&R": "SamplerCustomAdvanced",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 37,
+      "type": "ComfySwitchNode",
+      "pos": [
+        3420,
+        242
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 66,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 33
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 34
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            35
+          ]
+        }
+      ],
+      "title": "按需选择采样结果",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 38,
+      "type": "VAEDecode",
+      "pos": [
+        3790,
+        242
+      ],
+      "size": [
+        350,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 67,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 35
+        },
+        {
+          "label": "图像编解码器",
+          "localized_name": "图像编解码器",
+          "name": "vae",
+          "type": "VAE",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            82
+          ]
+        }
+      ],
+      "title": "生成图像解码",
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 40,
+      "type": "CodexPromptOptimize",
+      "pos": [
+        4160,
+        242
+      ],
+      "size": [
+        760,
+        800
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "原始提示词",
+          "name": "原始提示词",
+          "type": "STRING",
+          "widget": {
+            "name": "原始提示词"
+          },
+          "link": 10
+        },
+        {
+          "localized_name": "启用优化",
+          "name": "启用优化",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用优化"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "目标模型",
+          "name": "目标模型",
+          "type": "COMBO",
+          "widget": {
+            "name": "目标模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "语言模型",
+          "name": "语言模型",
+          "type": "COMBO",
+          "widget": {
+            "name": "语言模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "前置规则",
+          "name": "前置规则",
+          "type": "STRING",
+          "widget": {
+            "name": "前置规则"
+          },
+          "link": 8
+        },
+        {
+          "localized_name": "输出上限",
+          "name": "输出上限",
+          "type": "INT",
+          "widget": {
+            "name": "输出上限"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "上下文",
+          "name": "上下文",
+          "type": "INT",
+          "widget": {
+            "name": "上下文"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "温度",
+          "name": "温度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "温度"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "top_p",
+          "name": "top_p",
+          "type": "FLOAT",
+          "widget": {
+            "name": "top_p"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "详细程度",
+          "name": "详细程度",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "详细程度"
+          },
+          "link": null
+        },
+        {
+          "name": "输出语言",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "输出语言"
+          }
+        },
+        {
+          "name": "种子",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "种子"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "最终生图提示词",
+          "name": "最终生图提示词",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            11,
+            56,
+            85,
+            102,
+            143
+          ]
+        }
+      ],
+      "title": "提示词优化 · 关闭原文直通",
+      "properties": {
+        "Node name for S&R": "CodexPromptOptimize",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "原始提示词": true,
+            "启用优化": true,
+            "目标模型": true,
+            "语言模型": true,
+            "前置规则": true,
+            "输出上限": true,
+            "上下文": true,
+            "温度": true,
+            "top_p": true,
+            "详细程度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        true,
+        "Image2.1",
+        "qwen3.5:9b",
+        "将用户输入整理为目标生图模型能准确执行的提示词，只输出最终提示词。保留主体、身份、数量、动作、表情、衣物覆盖、物体关系、画面左右、环境、构图、光照和明确限制。参考图1、图2、@图1等来源编号必须保持，不互换角色或添加未要求的人物、物件、剧情。用户中文输入默认输出中文，指定要出现在图上的文字逐字保留。去掉重复措辞和不适用于该模型的标签，但不删除关键需求；看不清或未给出的细节不要编造。不要输出分析、标题、解释、对白时间轴、帧率、S编号或视频镜头运动。",
+        1536,
+        8192,
+        0.15,
+        0.9,
+        5,
+        "",
+        "",
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ],
+        "中文",
+        42
+      ]
+    },
+    {
+      "id": 50,
+      "type": "CodexQwenStudioRepair",
+      "pos": [
+        4530,
+        242
+      ],
+      "size": [
+        530,
+        1140
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 72,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "localized_name": "启用修复",
+          "name": "启用修复",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用修复"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "修复引擎",
+          "name": "修复引擎",
+          "type": "COMBO",
+          "widget": {
+            "name": "修复引擎"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "修复规则",
+          "name": "修复规则",
+          "type": "STRING",
+          "widget": {
+            "name": "修复规则"
+          },
+          "link": 9
+        },
+        {
+          "localized_name": "补充要求",
+          "name": "补充要求",
+          "type": "STRING",
+          "widget": {
+            "name": "补充要求"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "种子",
+          "name": "种子",
+          "type": "INT",
+          "widget": {
+            "name": "种子"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "Image2配置",
+          "name": "Image2配置",
+          "shape": 7,
+          "type": "H3_IMAGE_SETTINGS",
+          "link": 37
+        },
+        {
+          "name": "使用外接配置",
+          "link": null,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "使用外接配置"
+          }
+        },
+        {
+          "name": "Image2模型",
+          "link": null,
+          "type": "STRING",
+          "widget": {
+            "name": "Image2模型"
+          }
+        },
+        {
+          "name": "Image2编码器",
+          "link": null,
+          "type": "STRING",
+          "widget": {
+            "name": "Image2编码器"
+          }
+        },
+        {
+          "name": "Image2VAE",
+          "link": null,
+          "type": "STRING",
+          "widget": {
+            "name": "Image2VAE"
+          }
+        },
+        {
+          "name": "Image2步数",
+          "link": null,
+          "type": "INT",
+          "widget": {
+            "name": "Image2步数"
+          }
+        },
+        {
+          "name": "Image2CFG",
+          "link": null,
+          "type": "FLOAT",
+          "widget": {
+            "name": "Image2CFG"
+          }
+        },
+        {
+          "name": "Image2采样器",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Image2采样器"
+          }
+        },
+        {
+          "name": "Image2调度器",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Image2调度器"
+          }
+        },
+        {
+          "name": "Image2降噪",
+          "link": null,
+          "type": "FLOAT",
+          "widget": {
+            "name": "Image2降噪"
+          }
+        },
+        {
+          "name": "Image2缓存设备",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Image2缓存设备"
+          }
+        },
+        {
+          "name": "Image2缓存精度",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Image2缓存精度"
+          }
+        },
+        {
+          "name": "Image2编码器设备",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Image2编码器设备"
+          }
+        },
+        {
+          "name": "Krea模型",
+          "link": null,
+          "type": "STRING",
+          "widget": {
+            "name": "Krea模型"
+          }
+        },
+        {
+          "name": "Krea编码器",
+          "link": null,
+          "type": "STRING",
+          "widget": {
+            "name": "Krea编码器"
+          }
+        },
+        {
+          "name": "KreaVAE",
+          "link": null,
+          "type": "STRING",
+          "widget": {
+            "name": "KreaVAE"
+          }
+        },
+        {
+          "name": "Krea步数",
+          "link": null,
+          "type": "INT",
+          "widget": {
+            "name": "Krea步数"
+          }
+        },
+        {
+          "name": "KreaCFG",
+          "link": null,
+          "type": "FLOAT",
+          "widget": {
+            "name": "KreaCFG"
+          }
+        },
+        {
+          "name": "Krea采样器",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Krea采样器"
+          }
+        },
+        {
+          "name": "Krea调度器",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Krea调度器"
+          }
+        },
+        {
+          "name": "Krea降噪",
+          "link": null,
+          "type": "FLOAT",
+          "widget": {
+            "name": "Krea降噪"
+          }
+        },
+        {
+          "name": "Krea编码器设备",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "Krea编码器设备"
+          }
+        },
+        {
+          "name": "负面提示词",
+          "link": null,
+          "type": "STRING",
+          "widget": {
+            "name": "负面提示词"
+          }
+        },
+        {
+          "name": "输入尺寸",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "输入尺寸"
+          }
+        },
+        {
+          "name": "输入长边",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "输入长边"
+          }
+        },
+        {
+          "name": "输出尺寸",
+          "link": null,
+          "type": "COMBO",
+          "widget": {
+            "name": "输出尺寸"
+          }
+        },
+        {
+          "name": "输出长边",
+          "link": null,
+          "type": "INT",
+          "widget": {
+            "name": "输出长边"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "修复或直通图像",
+          "name": "修复或直通图像",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            93
+          ]
+        },
+        {
+          "name": "修复已启用",
+          "type": "BOOLEAN",
+          "links": [
+            131,
+            133
+          ],
+          "slot_index": 1
+        }
+      ],
+      "title": "可选修复 · Image2.1 / MOSS 重绘",
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioRepair",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用修复": true,
+            "修复引擎": true,
+            "修复规则": true,
+            "补充要求": true,
+            "种子": true,
+            "MOSS模型": true,
+            "MOSS编码器": true,
+            "MOSSVAE": true,
+            "MOSS步数": true,
+            "MOSSCFG": true,
+            "MOSS采样器": true,
+            "MOSS调度器": true,
+            "MOSS降噪": true,
+            "MOSS位移": true,
+            "MOSS负向跳层": true,
+            "MOSS负面提示词": true,
+            "MOSS编码器设备": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "Image2.1",
+        "仅修复可见的不合理五官、手指、脚部、肢体比例、接触遮挡和衣物破损或接缝错误。保留同一人物身份、脸型、正常身体结构、原姿态、服装覆盖、构图、场景、光照及自然肤质。没有明确错误的位置维持原样，不改变服装覆盖，不增加人物或物件，不磨皮，不添加文字。",
+        "",
+        42,
+        false,
+        "qwen-image-2.1-UC-Q6_K.gguf",
+        "qwen3vl_8b_int8_convrot.safetensors",
+        "qwen_image_2.1_vae_bf16.safetensors",
+        25,
+        1.0,
+        "euler",
+        "simple",
+        0.3,
+        "auto",
+        "",
+        "default",
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        8,
+        1.0,
+        "euler",
+        "simple",
+        0.3,
+        "default",
+        "",
+        "2K",
+        2048,
+        "跟随输入",
+        1024
+      ]
+    },
+    {
+      "id": 51,
+      "type": "H3ImageModelSettings",
+      "pos": [
+        4900,
+        242
+      ],
+      "size": [
+        530,
+        34
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像模型",
+          "name": "图像模型",
+          "type": "COMBO",
+          "widget": {
+            "name": "图像模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "文本编码器",
+          "name": "文本编码器",
+          "type": "COMBO",
+          "widget": {
+            "name": "文本编码器"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "VAE",
+          "name": "VAE",
+          "type": "COMBO",
+          "widget": {
+            "name": "VAE"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "步数",
+          "name": "步数",
+          "type": "INT",
+          "widget": {
+            "name": "步数"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "CFG",
+          "name": "CFG",
+          "type": "FLOAT",
+          "widget": {
+            "name": "CFG"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "采样器",
+          "name": "采样器",
+          "type": "COMBO",
+          "widget": {
+            "name": "采样器"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "调度器",
+          "name": "调度器",
+          "type": "COMBO",
+          "widget": {
+            "name": "调度器"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "去噪",
+          "name": "去噪",
+          "type": "FLOAT",
+          "widget": {
+            "name": "去噪"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "缓存设备",
+          "name": "缓存设备",
+          "type": "COMBO",
+          "widget": {
+            "name": "缓存设备"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "缓存精度",
+          "name": "缓存精度",
+          "type": "COMBO",
+          "widget": {
+            "name": "缓存精度"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "编码器设备",
+          "name": "编码器设备",
+          "type": "COMBO",
+          "widget": {
+            "name": "编码器设备"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "分镜图长边",
+          "name": "分镜图长边",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "分镜图长边"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "上镜参考策略",
+          "name": "上镜参考策略",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "上镜参考策略"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "参考读取长边",
+          "name": "参考读取长边",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "参考读取长边"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#30e6ff",
+          "color_on": "#30e6ff",
+          "localized_name": "图像模型配置",
+          "name": "图像模型配置",
+          "type": "H3_IMAGE_SETTINGS",
+          "slot_index": 0,
+          "links": [
+            37
+          ]
+        }
+      ],
+      "title": "Image2.1 修复模型与采样",
+      "properties": {
+        "Node name for S&R": "H3ImageModelSettings",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "图像模型": true,
+            "文本编码器": true,
+            "VAE": true,
+            "步数": true,
+            "CFG": true,
+            "采样器": true,
+            "调度器": true,
+            "去噪": true,
+            "缓存设备": true,
+            "缓存精度": true,
+            "编码器设备": true,
+            "分镜图长边": true,
+            "上镜参考策略": true,
+            "参考读取长边": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "qwen-image-2.1-UC-Q6_K.gguf",
+        "qwen3vl_8b_int8_convrot.safetensors",
+        "qwen_image_2.1_vae_bf16.safetensors",
+        25,
+        1,
+        "euler",
+        "simple",
+        1,
+        "auto",
+        "default",
+        "default",
+        0,
+        "完整参考（兼容）",
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "type": "CodexQwenStudioUpscale",
+      "pos": [
+        5270,
+        242
+      ],
+      "size": [
+        500,
+        1010
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 74,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "link": 94
+        },
+        {
+          "localized_name": "启用超分",
+          "name": "启用超分",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用超分"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "超分路线",
+          "name": "超分路线",
+          "type": "COMBO",
+          "widget": {
+            "name": "超分路线"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "总倍率",
+          "name": "总倍率",
+          "type": "COMBO",
+          "widget": {
+            "name": "总倍率"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "DLSS倍率",
+          "name": "DLSS倍率",
+          "type": "COMBO",
+          "widget": {
+            "name": "DLSS倍率"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "VOSR倍率",
+          "name": "VOSR倍率",
+          "type": "COMBO",
+          "widget": {
+            "name": "VOSR倍率"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "种子",
+          "name": "种子",
+          "type": "INT",
+          "widget": {
+            "name": "种子"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "色彩校正",
+          "name": "色彩校正",
+          "type": "COMBO",
+          "widget": {
+            "name": "色彩校正"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "图像分块",
+          "name": "图像分块",
+          "type": "INT",
+          "widget": {
+            "name": "图像分块"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "分块重叠",
+          "name": "分块重叠",
+          "type": "INT",
+          "widget": {
+            "name": "分块重叠"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "VAE分块",
+          "name": "VAE分块",
+          "type": "INT",
+          "widget": {
+            "name": "VAE分块"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "VAE重叠",
+          "name": "VAE重叠",
+          "type": "INT",
+          "widget": {
+            "name": "VAE重叠"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "Seed模型",
+          "name": "Seed模型",
+          "type": "COMBO",
+          "widget": {
+            "name": "Seed模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "输入噪声",
+          "name": "输入噪声",
+          "type": "FLOAT",
+          "widget": {
+            "name": "输入噪声"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "潜空间噪声",
+          "name": "潜空间噪声",
+          "type": "FLOAT",
+          "widget": {
+            "name": "潜空间噪声"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "交换层数",
+          "name": "交换层数",
+          "type": "INT",
+          "widget": {
+            "name": "交换层数"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "DLSS强度",
+          "name": "DLSS强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "DLSS强度"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "DLSS结构",
+          "name": "DLSS结构",
+          "type": "FLOAT",
+          "widget": {
+            "name": "DLSS结构"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "DLSS色彩",
+          "name": "DLSS色彩",
+          "type": "FLOAT",
+          "widget": {
+            "name": "DLSS色彩"
+          },
+          "link": null
+        },
+        {
+          "name": "输入尺寸",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "输入尺寸"
+          }
+        },
+        {
+          "name": "输入长边",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "输入长边"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "超分或直通图像",
+          "name": "超分或直通图像",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            38
+          ]
+        },
+        {
+          "name": "超分已启用",
+          "type": "BOOLEAN",
+          "links": [
+            132,
+            134
+          ],
+          "slot_index": 1
+        }
+      ],
+      "title": "可选超分 · 三条路线",
+      "properties": {
+        "Node name for S&R": "CodexQwenStudioUpscale",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用超分": true,
+            "超分路线": true,
+            "总倍率": true,
+            "DLSS倍率": true,
+            "VOSR倍率": true,
+            "种子": true,
+            "色彩校正": true,
+            "图像分块": true,
+            "分块重叠": true,
+            "VAE分块": true,
+            "VAE重叠": true,
+            "Seed模型": true,
+            "输入噪声": true,
+            "潜空间噪声": true,
+            "交换层数": true,
+            "DLSS强度": true,
+            "DLSS结构": true,
+            "DLSS色彩": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "SeedVR2",
+        2,
+        1,
+        2,
+        42,
+        "wavelet",
+        512,
+        64,
+        1024,
+        128,
+        "seedvr2_ema_3b_fp8_e4m3fn.safetensors",
+        0,
+        0,
+        0,
+        1,
+        1.5,
+        1,
+        "原图",
+        1024
+      ]
+    },
+    {
+      "id": 53,
+      "type": "CodexImageOutput",
+      "pos": [
+        3420,
+        296
+      ],
+      "size": [
+        350,
+        410
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 71,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "link": 92
+        },
+        {
+          "localized_name": "输出模式",
+          "name": "输出模式",
+          "type": "COMBO",
+          "widget": {
+            "name": "输出模式"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "文件名前缀",
+          "type": "STRING",
+          "widget": {
+            "name": "文件名前缀"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "格式",
+          "name": "格式",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "格式"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "压缩质量",
+          "name": "压缩质量",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "压缩质量"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            36,
+            39
+          ]
+        },
+        {
+          "localized_name": "输出报告",
+          "name": "输出报告",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "生成原图 · 修复前即时预览",
+      "properties": {
+        "Node name for S&R": "CodexImageOutput",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "输出模式": true,
+            "文件名前缀": true,
+            "格式": true,
+            "压缩质量": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "预览（不保存）",
+        "生图工作台/生成原图",
+        "png",
+        95,
+        ""
+      ]
+    },
+    {
+      "id": 54,
+      "type": "CodexStudioStageOutput",
+      "pos": [
+        3790,
+        296
+      ],
+      "size": [
+        500,
+        790
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 75,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "link": 38
+        },
+        {
+          "localized_name": "输出模式",
+          "name": "输出模式",
+          "type": "COMBO",
+          "widget": {
+            "name": "输出模式"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "文件名前缀",
+          "type": "STRING",
+          "widget": {
+            "name": "文件名前缀"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "格式",
+          "name": "格式",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "格式"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "压缩质量",
+          "name": "压缩质量",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "压缩质量"
+          },
+          "link": null
+        },
+        {
+          "name": "启用输出",
+          "type": "BOOLEAN",
+          "link": 132,
+          "widget": {
+            "name": "启用输出"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            40
+          ]
+        },
+        {
+          "localized_name": "输出报告",
+          "name": "输出报告",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "最终结果 · 保存与预览",
+      "properties": {
+        "Node name for S&R": "CodexStudioStageOutput",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "输出模式": true,
+            "文件名前缀": true,
+            "格式": true,
+            "压缩质量": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "保存并预览",
+        "生图工作台/最终结果",
+        "png",
+        95,
+        "",
+        true
+      ]
+    },
+    {
+      "id": 80,
+      "type": "CodexStudioLora",
+      "pos": [
+        4160,
+        296
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 41
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            42
+          ]
+        }
+      ],
+      "title": "LoRA 4 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 81,
+      "type": "CodexStudioLora",
+      "pos": [
+        4530,
+        296
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 42
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            43
+          ]
+        }
+      ],
+      "title": "LoRA 5 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 82,
+      "type": "CodexStudioLora",
+      "pos": [
+        4900,
+        296
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 43
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            44
+          ]
+        }
+      ],
+      "title": "LoRA 6 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 83,
+      "type": "CodexStudioLora",
+      "pos": [
+        5270,
+        296
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 53,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 44
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            45
+          ]
+        }
+      ],
+      "title": "LoRA 7 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 84,
+      "type": "CodexStudioLora",
+      "pos": [
+        3420,
+        350
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 45
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            46
+          ]
+        }
+      ],
+      "title": "LoRA 8 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 85,
+      "type": "CodexStudioLora",
+      "pos": [
+        3790,
+        350
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 46
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            47
+          ]
+        }
+      ],
+      "title": "LoRA 9 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 86,
+      "type": "CodexStudioLora",
+      "pos": [
+        4160,
+        350
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 56,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 47
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            48
+          ]
+        }
+      ],
+      "title": "LoRA 10 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 87,
+      "type": "CodexStudioLora",
+      "pos": [
+        4530,
+        350
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 57,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 48
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            49
+          ]
+        }
+      ],
+      "title": "LoRA 11 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 88,
+      "type": "CodexStudioLora",
+      "pos": [
+        4900,
+        350
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 58,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "MODEL",
+          "link": 49
+        },
+        {
+          "localized_name": "启用LoRA",
+          "name": "启用LoRA",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "启用LoRA"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA文件",
+          "name": "LoRA文件",
+          "type": "COMBO",
+          "widget": {
+            "name": "LoRA文件"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "LoRA强度",
+          "name": "LoRA强度",
+          "type": "FLOAT",
+          "widget": {
+            "name": "LoRA强度"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "LoRA模型",
+          "name": "LoRA模型",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            50,
+            51,
+            75,
+            121,
+            140
+          ]
+        }
+      ],
+      "title": "LoRA 12 · 可选",
+      "properties": {
+        "Node name for S&R": "CodexStudioLora",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "启用LoRA": true,
+            "LoRA文件": true,
+            "LoRA强度": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "None",
+        0.75
+      ]
+    },
+    {
+      "id": 60,
+      "type": "CodexDeferredUNETLoader",
+      "pos": [
+        5270,
+        350
+      ],
+      "size": [
+        450,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "主模型文件",
+          "localized_name": "主模型文件",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "label": "权重精度",
+          "localized_name": "权重精度",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            52
+          ]
+        }
+      ],
+      "title": "MOSS 图像主模型",
+      "properties": {
+        "Node name for S&R": "CodexDeferredUNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "unet_name": true,
+            "weight_dtype": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "jibMixMossRealistic_v2RealityRenew.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 61,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        3420,
+        404
+      ],
+      "size": [
+        340,
+        190
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 52
+        },
+        {
+          "label": "采样偏移",
+          "localized_name": "采样偏移",
+          "name": "shift",
+          "type": "FLOAT",
+          "widget": {
+            "name": "shift"
+          },
+          "link": null
+        },
+        {
+          "label": "采样类型",
+          "localized_name": "采样类型",
+          "name": "sampling",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "sampling"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            55
+          ]
+        }
+      ],
+      "title": "MOSS 模型位移",
+      "properties": {
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "shift": true,
+            "sampling": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        5,
+        "flow"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "ComfySwitchNode",
+      "pos": [
+        3790,
+        404
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 54
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 55
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            99
+          ]
+        }
+      ],
+      "title": "本地模型族 · Qwen / MOSS",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 63,
+      "type": "CodexDeferredCLIPLoader",
+      "pos": [
+        4160,
+        404
+      ],
+      "size": [
+        450,
+        190
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "文本编码器文件",
+          "localized_name": "文本编码器文件",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "编码器类型",
+          "localized_name": "编码器类型",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        },
+        {
+          "label": "运行设备",
+          "localized_name": "运行设备",
+          "name": "device",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "device"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "文本编码器",
+          "localized_name": "文本编码器",
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            61,
+            62
+          ]
+        }
+      ],
+      "title": "MOSS Qwen3.5 图像编码器",
+      "properties": {
+        "Node name for S&R": "CodexDeferredCLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "clip_name": true,
+            "type": true,
+            "device": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "qwen3.5_9b_bf16.safetensors",
+        "moss_image",
+        "default"
+      ]
+    },
+    {
+      "id": 64,
+      "type": "CodexStudioMossPrompt",
+      "pos": [
+        4530,
+        404
+      ],
+      "size": [
+        450,
+        210
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 57
+        },
+        {
+          "localized_name": "参考图集",
+          "name": "参考图集",
+          "shape": 7,
+          "type": "CODEX_REFERENCES",
+          "link": 59
+        },
+        {
+          "localized_name": "提示词",
+          "name": "提示词",
+          "type": "STRING",
+          "widget": {
+            "name": "提示词"
+          },
+          "link": 56
+        },
+        {
+          "localized_name": "主参考图编号",
+          "name": "主参考图编号",
+          "type": "INT",
+          "widget": {
+            "name": "主参考图编号"
+          },
+          "link": 58
+        },
+        {
+          "localized_name": "生成模型名",
+          "name": "生成模型名",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "生成模型名"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "MOSS提示词",
+          "name": "MOSS提示词",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            60
+          ]
+        }
+      ],
+      "title": "MOSS · 主参考图重绘提示词",
+      "properties": {
+        "Node name for S&R": "CodexStudioMossPrompt",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "提示词": true,
+            "主参考图编号": true,
+            "生成模型名": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ],
+        "MOSS"
+      ]
+    },
+    {
+      "id": 65,
+      "type": "CodexDeferredVAELoader",
+      "pos": [
+        4900,
+        404
+      ],
+      "size": [
+        450,
+        140
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "编解码器文件",
+          "localized_name": "编解码器文件",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像编解码器",
+          "localized_name": "图像编解码器",
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            67,
+            80
+          ]
+        }
+      ],
+      "title": "MOSS 专用 VAE",
+      "properties": {
+        "Node name for S&R": "CodexDeferredVAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "vae_name": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "flux2-vae_small.safetensors"
+      ]
+    },
+    {
+      "id": 66,
+      "type": "CLIPTextEncode",
+      "pos": [
+        5270,
+        404
+      ],
+      "size": [
+        450,
+        280
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "文本编码器",
+          "localized_name": "文本编码器",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 61
+        },
+        {
+          "label": "文本",
+          "localized_name": "文本",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 60
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "条件",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            76
+          ]
+        }
+      ],
+      "title": "MOSS 正面提示词",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 67,
+      "type": "CLIPTextEncode",
+      "pos": [
+        3420,
+        458
+      ],
+      "size": [
+        450,
+        280
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "文本编码器",
+          "localized_name": "文本编码器",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 62
+        },
+        {
+          "label": "文本",
+          "localized_name": "文本",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "条件",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            77
+          ]
+        }
+      ],
+      "title": "MOSS 负面提示词",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 68,
+      "type": "ImageScale",
+      "pos": [
+        3790,
+        458
+      ],
+      "size": [
+        450,
+        260
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 63
+        },
+        {
+          "localized_name": "缩放算法",
+          "name": "upscale_method",
+          "type": "COMBO",
+          "widget": {
+            "name": "upscale_method"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "宽度",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 64
+        },
+        {
+          "localized_name": "高度",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 65
+        },
+        {
+          "localized_name": "裁剪",
+          "name": "crop",
+          "type": "COMBO",
+          "widget": {
+            "name": "crop"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            66
+          ]
+        }
+      ],
+      "title": "MOSS 主参考图匹配画布",
+      "properties": {
+        "Node name for S&R": "ImageScale",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "upscale_method": true,
+            "width": true,
+            "height": true,
+            "crop": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "lanczos",
+        512,
+        512,
+        "disabled"
+      ]
+    },
+    {
+      "id": 69,
+      "type": "VAEEncode",
+      "pos": [
+        4160,
+        458
+      ],
+      "size": [
+        350,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "像素",
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 66
+        },
+        {
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 67
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            72
+          ]
+        }
+      ],
+      "title": "MOSS 图生图原图潜空间",
+      "properties": {
+        "Node name for S&R": "VAEEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 70,
+      "type": "EmptyFlux2LatentImage",
+      "pos": [
+        4530,
+        458
+      ],
+      "size": [
+        350,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 68
+        },
+        {
+          "localized_name": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 69
+        },
+        {
+          "localized_name": "batch_size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            71
+          ]
+        }
+      ],
+      "title": "MOSS 文生图空潜空间",
+      "properties": {
+        "Node name for S&R": "EmptyFlux2LatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "width": true,
+            "height": true,
+            "batch_size": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 71,
+      "type": "ComfySwitchNode",
+      "pos": [
+        4900,
+        458
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 71
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 72
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 70
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            78
+          ]
+        }
+      ],
+      "title": "MOSS 文生图 / 图生图潜空间",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 72,
+      "type": "KSampler",
+      "pos": [
+        5270,
+        458
+      ],
+      "size": [
+        450,
+        550
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 61,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 75
+        },
+        {
+          "label": "正面条件",
+          "localized_name": "正面条件",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 76
+        },
+        {
+          "label": "负面条件",
+          "localized_name": "负面条件",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 77
+        },
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 78
+        },
+        {
+          "label": "随机种子",
+          "localized_name": "随机种子",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "label": "采样步数",
+          "localized_name": "采样步数",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "label": "提示词引导强度",
+          "localized_name": "提示词引导强度",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "label": "采样器",
+          "localized_name": "采样器",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "label": "调度器",
+          "localized_name": "调度器",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "label": "降噪强度",
+          "localized_name": "降噪强度",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": 74
+        }
+      ],
+      "outputs": [
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            79
+          ]
+        }
+      ],
+      "title": "MOSS 生成采样",
+      "properties": {
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "seed": true,
+            "steps": true,
+            "cfg": true,
+            "sampler_name": true,
+            "scheduler": true,
+            "denoise": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        42,
+        "fixed",
+        12,
+        1,
+        "er_sde",
+        "bong_tangent",
+        1
+      ]
+    },
+    {
+      "id": 73,
+      "type": "BBAPIConnection",
+      "pos": [
+        3420,
+        512
+      ],
+      "size": [
+        700,
+        520
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "配置名称",
+          "name": "配置名称",
+          "type": "STRING",
+          "widget": {
+            "name": "配置名称"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "接口地址",
+          "name": "接口地址",
+          "type": "STRING",
+          "widget": {
+            "name": "接口地址"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "默认模型",
+          "name": "默认模型",
+          "type": "STRING",
+          "widget": {
+            "name": "默认模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "超时秒",
+          "name": "超时秒",
+          "type": "INT",
+          "widget": {
+            "name": "超时秒"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "连接",
+          "name": "连接",
+          "type": "BBAPI_CONNECTION",
+          "slot_index": 0,
+          "links": [
+            84
+          ]
+        },
+        {
+          "localized_name": "状态",
+          "name": "状态",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "BBAPI · 本机加密连接配置",
+      "properties": {
+        "Node name for S&R": "BBAPIConnection",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "配置名称": true,
+            "接口地址": true,
+            "默认模型": true,
+            "超时秒": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "default",
+        "https://bbapi.ainivox.cn",
+        "",
+        300
+      ]
+    },
+    {
+      "id": 74,
+      "type": "CodexStudioBBAPI",
+      "pos": [
+        3790,
+        512
+      ],
+      "size": [
+        700,
+        650
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "连接",
+          "name": "连接",
+          "type": "BBAPI_CONNECTION",
+          "link": 84
+        },
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 86
+        },
+        {
+          "localized_name": "参考图集",
+          "name": "参考图集",
+          "shape": 7,
+          "type": "CODEX_REFERENCES",
+          "link": 89
+        },
+        {
+          "localized_name": "提示词",
+          "name": "提示词",
+          "type": "STRING",
+          "widget": {
+            "name": "提示词"
+          },
+          "link": 85
+        },
+        {
+          "localized_name": "分辨率",
+          "name": "分辨率",
+          "type": "COMBO",
+          "widget": {
+            "name": "分辨率"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "宽度",
+          "name": "宽度",
+          "type": "INT",
+          "widget": {
+            "name": "宽度"
+          },
+          "link": 87
+        },
+        {
+          "localized_name": "高度",
+          "name": "高度",
+          "type": "INT",
+          "widget": {
+            "name": "高度"
+          },
+          "link": 88
+        },
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "STRING",
+          "widget": {
+            "name": "模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "质量",
+          "name": "质量",
+          "type": "COMBO",
+          "widget": {
+            "name": "质量"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "重新生成编号",
+          "name": "重新生成编号",
+          "type": "INT",
+          "widget": {
+            "name": "重新生成编号"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "BBAPI生成图",
+          "name": "BBAPI生成图",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            91
+          ]
+        },
+        {
+          "localized_name": "BBAPI报告",
+          "name": "BBAPI报告",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "BBAPI · 文生图 / 多图参考",
+      "properties": {
+        "Node name for S&R": "CodexStudioBBAPI",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "提示词": true,
+            "分辨率": true,
+            "宽度": true,
+            "高度": true,
+            "模型": true,
+            "质量": true,
+            "重新生成编号": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        "1K",
+        1024,
+        1024,
+        "自动（2.5优先）",
+        "省费",
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "type": "ComfySwitchNode",
+      "pos": [
+        4160,
+        512
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 68,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 82
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 83
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 81
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            128
+          ]
+        }
+      ],
+      "title": "生成结果 · Qwen / MOSS",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 76,
+      "type": "ComfySwitchNode",
+      "pos": [
+        4530,
+        512
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 70,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 150
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 91
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 90
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            92
+          ]
+        }
+      ],
+      "title": "生成结果 · 本地 / BBAPI",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 77,
+      "type": "CodexStudioDenoise",
+      "pos": [
+        4900,
+        512
+      ],
+      "size": [
+        350,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 73
+        },
+        {
+          "localized_name": "图生图降噪",
+          "name": "图生图降噪",
+          "type": "FLOAT",
+          "widget": {
+            "name": "图生图降噪"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "本次降噪",
+          "name": "本次降噪",
+          "type": "FLOAT",
+          "slot_index": 0,
+          "links": [
+            74
+          ]
+        }
+      ],
+      "title": "MOSS 图生图降噪",
+      "properties": {
+        "Node name for S&R": "CodexStudioDenoise",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "图生图降噪": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        0.65
+      ]
+    },
+    {
+      "id": 78,
+      "type": "VAEDecode",
+      "pos": [
+        5270,
+        512
+      ],
+      "size": [
+        380,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 64,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 79
+        },
+        {
+          "label": "图像编解码器",
+          "localized_name": "图像编解码器",
+          "name": "vae",
+          "type": "VAE",
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            83
+          ]
+        }
+      ],
+      "title": "MOSS 生成图像解码",
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 79,
+      "type": "PrimitiveInt",
+      "pos": [
+        3420,
+        566
+      ],
+      "size": [
+        450,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "数值",
+          "localized_name": "数值",
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "整数",
+          "name": "INT",
+          "type": "INT",
+          "slot_index": 0,
+          "links": [
+            58,
+            96,
+            104,
+            146
+          ]
+        }
+      ],
+      "title": "MOSS 主参考图序号",
+      "properties": {
+        "Node name for S&R": "PrimitiveInt",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "value": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1,
+        "fixed"
+      ]
+    },
+    {
+      "id": 55,
+      "type": "CodexStudioStageOutput",
+      "pos": [
+        3790,
+        566
+      ],
+      "size": [
+        530,
+        350
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 73,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "link": 93
+        },
+        {
+          "localized_name": "输出模式",
+          "name": "输出模式",
+          "type": "COMBO",
+          "widget": {
+            "name": "输出模式"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "文件名前缀",
+          "type": "STRING",
+          "widget": {
+            "name": "文件名前缀"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "格式",
+          "name": "格式",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "格式"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "压缩质量",
+          "name": "压缩质量",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "压缩质量"
+          },
+          "link": null
+        },
+        {
+          "name": "启用输出",
+          "type": "BOOLEAN",
+          "link": 131,
+          "widget": {
+            "name": "启用输出"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            94,
+            95
+          ]
+        },
+        {
+          "localized_name": "输出报告",
+          "name": "输出报告",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "修复阶段 · 预览与保存",
+      "properties": {
+        "Node name for S&R": "CodexStudioStageOutput",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "输出模式": true,
+            "文件名前缀": true,
+            "格式": true,
+            "压缩质量": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "预览（不保存）",
+        "生图工作台/修复结果",
+        "png",
+        95,
+        "",
+        true
+      ]
+    },
+    {
+      "id": 90,
+      "type": "CodexDeferredUNETLoader",
+      "pos": [
+        4160,
+        566
+      ],
+      "size": [
+        450,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "主模型文件",
+          "localized_name": "主模型文件",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "label": "权重精度",
+          "localized_name": "权重精度",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            97
+          ]
+        }
+      ],
+      "title": "Z-Image 主模型",
+      "properties": {
+        "Node name for S&R": "CodexDeferredUNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "unet_name": true,
+            "weight_dtype": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "z_image_turbo_bf16.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 91,
+      "type": "CodexDeferredCLIPLoader",
+      "pos": [
+        4530,
+        566
+      ],
+      "size": [
+        450,
+        190
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "文本编码器文件",
+          "localized_name": "文本编码器文件",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "编码器类型",
+          "localized_name": "编码器类型",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        },
+        {
+          "label": "运行设备",
+          "localized_name": "运行设备",
+          "name": "device",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "device"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "文本编码器",
+          "localized_name": "文本编码器",
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            107
+          ]
+        }
+      ],
+      "title": "Z-Image 文本编码器",
+      "properties": {
+        "Node name for S&R": "CodexDeferredCLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "clip_name": true,
+            "type": true,
+            "device": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "qwen_3_4b.safetensors",
+        "lumina2",
+        "default"
+      ]
+    },
+    {
+      "id": 92,
+      "type": "CodexDeferredVAELoader",
+      "pos": [
+        4900,
+        566
+      ],
+      "size": [
+        450,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "编解码器文件",
+          "localized_name": "编解码器文件",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像编解码器",
+          "localized_name": "图像编解码器",
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            115,
+            126
+          ]
+        }
+      ],
+      "title": "Z-Image VAE",
+      "properties": {
+        "Node name for S&R": "CodexDeferredVAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "vae_name": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "ae.safetensors"
+      ]
+    },
+    {
+      "id": 93,
+      "type": "CLIPTextEncode",
+      "pos": [
+        5270,
+        566
+      ],
+      "size": [
+        450,
+        280
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "文本编码器",
+          "localized_name": "文本编码器",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 107
+        },
+        {
+          "label": "文本",
+          "localized_name": "文本",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 106
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "条件",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            108,
+            122
+          ]
+        }
+      ],
+      "title": "Z-Image 正面提示词",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 94,
+      "type": "ConditioningZeroOut",
+      "pos": [
+        3420,
+        620
+      ],
+      "size": [
+        350,
+        160
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 49,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "文本条件",
+          "localized_name": "文本条件",
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 108
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "条件",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            123
+          ]
+        }
+      ],
+      "title": "Z-Image 空负面条件",
+      "properties": {
+        "Node name for S&R": "ConditioningZeroOut",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 95,
+      "type": "KSampler",
+      "pos": [
+        3790,
+        620
+      ],
+      "size": [
+        450,
+        550
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 62,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 121
+        },
+        {
+          "label": "正面条件",
+          "localized_name": "正面条件",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 122
+        },
+        {
+          "label": "负面条件",
+          "localized_name": "负面条件",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 123
+        },
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 124
+        },
+        {
+          "label": "随机种子",
+          "localized_name": "随机种子",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "label": "采样步数",
+          "localized_name": "采样步数",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "label": "提示词引导强度",
+          "localized_name": "提示词引导强度",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "label": "采样器",
+          "localized_name": "采样器",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "label": "调度器",
+          "localized_name": "调度器",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "label": "降噪强度",
+          "localized_name": "降噪强度",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": 120
+        }
+      ],
+      "outputs": [
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            125
+          ]
+        }
+      ],
+      "title": "Z-Image 图像采样",
+      "properties": {
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "seed": true,
+            "steps": true,
+            "cfg": true,
+            "sampler_name": true,
+            "scheduler": true,
+            "denoise": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        42,
+        "fixed",
+        9,
+        1,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 96,
+      "type": "CodexStudioMossPrompt",
+      "pos": [
+        4160,
+        620
+      ],
+      "size": [
+        450,
+        220
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 103
+        },
+        {
+          "localized_name": "参考图集",
+          "name": "参考图集",
+          "shape": 7,
+          "type": "CODEX_REFERENCES",
+          "link": 105
+        },
+        {
+          "localized_name": "提示词",
+          "name": "提示词",
+          "type": "STRING",
+          "widget": {
+            "name": "提示词"
+          },
+          "link": 102
+        },
+        {
+          "localized_name": "主参考图编号",
+          "name": "主参考图编号",
+          "type": "INT",
+          "widget": {
+            "name": "主参考图编号"
+          },
+          "link": 104
+        },
+        {
+          "localized_name": "生成模型名",
+          "name": "生成模型名",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "生成模型名"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "MOSS提示词",
+          "name": "MOSS提示词",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            106
+          ]
+        }
+      ],
+      "title": "Z-Image 主参考图重绘提示词",
+      "properties": {
+        "Node name for S&R": "CodexStudioMossPrompt",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "提示词": true,
+            "主参考图编号": true,
+            "生成模型名": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ],
+        "Z-Image"
+      ]
+    },
+    {
+      "id": 97,
+      "type": "EmptySD3LatentImage",
+      "pos": [
+        4530,
+        620
+      ],
+      "size": [
+        350,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "宽度",
+          "localized_name": "宽度",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 109
+        },
+        {
+          "label": "高度",
+          "localized_name": "高度",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 110
+        },
+        {
+          "label": "批次数量",
+          "localized_name": "批次数量",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            117
+          ]
+        }
+      ],
+      "title": "Z-Image 文生图空潜空间",
+      "properties": {
+        "Node name for S&R": "EmptySD3LatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "width": true,
+            "height": true,
+            "batch_size": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 98,
+      "type": "ImageScale",
+      "pos": [
+        4900,
+        620
+      ],
+      "size": [
+        450,
+        260
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 111
+        },
+        {
+          "localized_name": "缩放算法",
+          "name": "upscale_method",
+          "type": "COMBO",
+          "widget": {
+            "name": "upscale_method"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "宽度",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 112
+        },
+        {
+          "localized_name": "高度",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 113
+        },
+        {
+          "localized_name": "裁剪",
+          "name": "crop",
+          "type": "COMBO",
+          "widget": {
+            "name": "crop"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            114
+          ]
+        }
+      ],
+      "title": "Z-Image 主图匹配画布",
+      "properties": {
+        "Node name for S&R": "ImageScale",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "upscale_method": true,
+            "width": true,
+            "height": true,
+            "crop": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "lanczos",
+        512,
+        512,
+        "disabled"
+      ]
+    },
+    {
+      "id": 99,
+      "type": "VAEEncode",
+      "pos": [
+        5270,
+        620
+      ],
+      "size": [
+        350,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "像素",
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 114
+        },
+        {
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 115
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            118
+          ]
+        }
+      ],
+      "title": "Z-Image 图生图原图潜空间",
+      "properties": {
+        "Node name for S&R": "VAEEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 100,
+      "type": "ComfySwitchNode",
+      "pos": [
+        3420,
+        674
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 117
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 118
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 116
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            124
+          ]
+        }
+      ],
+      "title": "Z-Image 文生图 / 图生图潜空间",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 101,
+      "type": "CodexStudioDenoise",
+      "pos": [
+        3790,
+        674
+      ],
+      "size": [
+        350,
+        180
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "生成模式",
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 119
+        },
+        {
+          "localized_name": "图生图降噪",
+          "name": "图生图降噪",
+          "type": "FLOAT",
+          "widget": {
+            "name": "图生图降噪"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "本次降噪",
+          "name": "本次降噪",
+          "type": "FLOAT",
+          "slot_index": 0,
+          "links": [
+            120
+          ]
+        }
+      ],
+      "title": "Z-Image 图生图降噪",
+      "properties": {
+        "Node name for S&R": "CodexStudioDenoise",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "图生图降噪": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        0.65
+      ]
+    },
+    {
+      "id": 102,
+      "type": "VAEDecode",
+      "pos": [
+        4160,
+        674
+      ],
+      "size": [
+        380,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 65,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "潜变量",
+          "localized_name": "潜变量",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 125
+        },
+        {
+          "label": "图像编解码器",
+          "localized_name": "图像编解码器",
+          "name": "vae",
+          "type": "VAE",
+          "link": 126
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            129
+          ]
+        }
+      ],
+      "title": "Z-Image 图像解码",
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 103,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        4530,
+        674
+      ],
+      "size": [
+        340,
+        190
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 97
+        },
+        {
+          "label": "采样偏移",
+          "localized_name": "采样偏移",
+          "name": "shift",
+          "type": "FLOAT",
+          "widget": {
+            "name": "shift"
+          },
+          "link": null
+        },
+        {
+          "label": "采样类型",
+          "localized_name": "采样类型",
+          "name": "sampling",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "sampling"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "模型",
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            100
+          ]
+        }
+      ],
+      "title": "Z-Image 模型位移",
+      "properties": {
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "shift": true,
+            "sampling": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        3,
+        "flow"
+      ]
+    },
+    {
+      "id": 104,
+      "type": "ComfySwitchNode",
+      "pos": [
+        4900,
+        674
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 99
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 100
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 98
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            136
+          ]
+        }
+      ],
+      "title": "本地模型 · Qwen / MOSS / Z-Image",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 105,
+      "type": "ComfySwitchNode",
+      "pos": [
+        5270,
+        674
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 69,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "否时输入",
+          "localized_name": "否时输入",
+          "name": "on_false",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 128
+        },
+        {
+          "label": "是时输入",
+          "localized_name": "是时输入",
+          "name": "on_true",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 129
+        },
+        {
+          "label": "开关",
+          "localized_name": "开关",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 127
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "localized_name": "输出",
+          "name": "output",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            147
+          ]
+        }
+      ],
+      "title": "本地结果 · Qwen / MOSS / Z-Image",
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "switch": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 106,
+      "type": "CodexSpeechInput",
+      "title": "语音输入 · SenseVoice",
+      "pos": [
+        500,
+        1640
+      ],
+      "size": [
+        600,
+        460
+      ],
+      "flags": {},
+      "order": 77,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "启用识别",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "启用识别"
+          }
+        },
+        {
+          "name": "识别文字",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "识别文字"
+          }
+        },
+        {
+          "name": "音频文件",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "音频文件"
+          }
+        },
+        {
+          "name": "识别语言",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "识别语言"
+          }
+        },
+        {
+          "name": "数字规范",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "数字规范"
+          }
+        },
+        {
+          "name": "CPU线程",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "CPU线程"
+          }
+        },
+        {
+          "name": "外接音频",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "运行前卸载模型",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "运行前卸载模型"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "识别文本",
+          "type": "STRING",
+          "links": [
+            135
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodexSpeechInput",
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        false,
+        "",
+        "",
+        "自动",
+        true,
+        4,
+        true
+      ]
+    },
+    {
+      "id": 107,
+      "type": "Note",
+      "title": "BBAIGC 使用说明",
+      "pos": [
+        -590,
+        40
+      ],
+      "size": [
+        520,
+        270
+      ],
+      "flags": {},
+      "order": 78,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "BBAIGC · 使用方法、模型目录与智能体安装提示词见仓库 README。"
+      ],
+      "color": "#29313a",
+      "bgcolor": "#353e48"
+    },
+    {
+      "id": 108,
+      "type": "Note",
+      "title": "BBAIGC 使用说明",
+      "pos": [
+        -590,
+        350
+      ],
+      "size": [
+        520,
+        270
+      ],
+      "flags": {},
+      "order": 79,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "BBAIGC · 使用方法、模型目录与智能体安装提示词见仓库 README。"
+      ],
+      "color": "#29313a",
+      "bgcolor": "#353e48"
+    },
+    {
+      "id": 109,
+      "type": "Note",
+      "title": "BBAIGC 使用说明",
+      "pos": [
+        -590,
+        660
+      ],
+      "size": [
+        520,
+        270
+      ],
+      "flags": {},
+      "order": 80,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "BBAIGC · 使用方法、模型目录与智能体安装提示词见仓库 README。"
+      ],
+      "color": "#29313a",
+      "bgcolor": "#353e48"
+    },
+    {
+      "id": 110,
+      "type": "Note",
+      "title": "BBAIGC 使用说明",
+      "pos": [
+        -590,
+        970
+      ],
+      "size": [
+        520,
+        270
+      ],
+      "flags": {},
+      "order": 81,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "BBAIGC · 使用方法、模型目录与智能体安装提示词见仓库 README。"
+      ],
+      "color": "#29313a",
+      "bgcolor": "#353e48"
+    },
+    {
+      "id": 111,
+      "type": "Note",
+      "title": "BBAIGC 使用说明",
+      "pos": [
+        -590,
+        1280
+      ],
+      "size": [
+        520,
+        270
+      ],
+      "flags": {},
+      "order": 82,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "BBAIGC · 使用方法、模型目录与智能体安装提示词见仓库 README。"
+      ],
+      "color": "#29313a",
+      "bgcolor": "#353e48"
+    },
+    {
+      "id": 112,
+      "type": "CodexStudioKreaModel",
+      "title": "Krea 2 Turbo · 按需加载主模型",
+      "pos": [
+        5100,
+        2140
+      ],
+      "size": [
+        340,
+        260
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "图像模型",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "图像模型"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Krea模型",
+          "type": "MODEL",
+          "links": [
+            137
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodexStudioKreaModel",
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "krea2_turbo_fp8_scaled.safetensors"
+      ]
+    },
+    {
+      "id": 113,
+      "type": "ComfySwitchNode",
+      "title": "本地模型 · Krea / 其他路线",
+      "pos": [
+        5480,
+        2140
+      ],
+      "size": [
+        340,
+        260
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "MODEL",
+          "link": 136
+        },
+        {
+          "name": "on_true",
+          "type": "MODEL",
+          "link": 137
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 138,
+          "widget": {
+            "name": "switch"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "MODEL",
+          "links": [
+            139
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 114,
+      "type": "CodexStudioKreaGenerate",
+      "title": "Krea 2 Turbo · 文生图 / 单张主图重绘",
+      "pos": [
+        5860,
+        2140
+      ],
+      "size": [
+        380,
+        480
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "模型",
+          "type": "MODEL",
+          "link": 140
+        },
+        {
+          "name": "生成模式",
+          "type": "STRING",
+          "link": 141
+        },
+        {
+          "name": "参考图集",
+          "type": "CODEX_REFERENCES",
+          "link": 142
+        },
+        {
+          "name": "提示词",
+          "type": "STRING",
+          "link": 143,
+          "widget": {
+            "name": "提示词"
+          }
+        },
+        {
+          "name": "宽度",
+          "type": "INT",
+          "link": 144,
+          "widget": {
+            "name": "宽度"
+          }
+        },
+        {
+          "name": "高度",
+          "type": "INT",
+          "link": 145,
+          "widget": {
+            "name": "高度"
+          }
+        },
+        {
+          "name": "主参考图编号",
+          "type": "INT",
+          "link": 146,
+          "widget": {
+            "name": "主参考图编号"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Krea生成图",
+          "type": "IMAGE",
+          "links": [
+            148
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodexStudioKreaGenerate",
+        "bbaigc_author": "BBAIGC",
+        "bbaigc_version": "1.1.1"
+      },
+      "widgets_values": [
+        "",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        1024,
+        1024,
+        42,
+        8,
+        1.0,
+        "euler",
+        "simple",
+        0.65,
+        1
+      ]
+    },
+    {
+      "id": 115,
+      "type": "ComfySwitchNode",
+      "title": "生成结果 · Krea / 其他本地路线",
+      "pos": [
+        6280,
+        2140
+      ],
+      "size": [
+        340,
+        260
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "IMAGE",
+          "link": 147
+        },
+        {
+          "name": "on_true",
+          "type": "IMAGE",
+          "link": 148
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 149,
+          "widget": {
+            "name": "switch"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "IMAGE",
+          "links": [
+            150
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      6,
+      2,
+      0,
+      5,
+      3,
+      "CODEX_REFERENCES"
+    ],
+    [
+      8,
+      4,
+      1,
+      40,
+      4,
+      "STRING"
+    ],
+    [
+      10,
+      3,
+      0,
+      40,
+      0,
+      "STRING"
+    ],
+    [
+      15,
+      23,
+      0,
+      24,
+      0,
+      "MODEL"
+    ],
+    [
+      16,
+      24,
+      0,
+      25,
+      0,
+      "MODEL"
+    ],
+    [
+      17,
+      26,
+      0,
+      29,
+      0,
+      "CLIP"
+    ],
+    [
+      18,
+      27,
+      0,
+      29,
+      1,
+      "VAE"
+    ],
+    [
+      19,
+      27,
+      0,
+      38,
+      1,
+      "VAE"
+    ],
+    [
+      20,
+      28,
+      0,
+      30,
+      0,
+      "INT"
+    ],
+    [
+      21,
+      28,
+      1,
+      30,
+      1,
+      "INT"
+    ],
+    [
+      25,
+      29,
+      0,
+      33,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      26,
+      29,
+      1,
+      33,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      27,
+      32,
+      0,
+      36,
+      0,
+      "NOISE"
+    ],
+    [
+      28,
+      33,
+      0,
+      36,
+      1,
+      "GUIDER"
+    ],
+    [
+      29,
+      34,
+      0,
+      36,
+      2,
+      "SAMPLER"
+    ],
+    [
+      30,
+      35,
+      0,
+      36,
+      3,
+      "SIGMAS"
+    ],
+    [
+      31,
+      30,
+      0,
+      36,
+      4,
+      "LATENT"
+    ],
+    [
+      35,
+      37,
+      0,
+      38,
+      0,
+      "LATENT"
+    ],
+    [
+      36,
+      53,
+      0,
+      50,
+      0,
+      "IMAGE"
+    ],
+    [
+      38,
+      52,
+      0,
+      54,
+      0,
+      "IMAGE"
+    ],
+    [
+      39,
+      53,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      40,
+      54,
+      0,
+      5,
+      2,
+      "IMAGE"
+    ],
+    [
+      41,
+      25,
+      0,
+      80,
+      0,
+      "MODEL"
+    ],
+    [
+      42,
+      80,
+      0,
+      81,
+      0,
+      "MODEL"
+    ],
+    [
+      43,
+      81,
+      0,
+      82,
+      0,
+      "MODEL"
+    ],
+    [
+      44,
+      82,
+      0,
+      83,
+      0,
+      "MODEL"
+    ],
+    [
+      45,
+      83,
+      0,
+      84,
+      0,
+      "MODEL"
+    ],
+    [
+      46,
+      84,
+      0,
+      85,
+      0,
+      "MODEL"
+    ],
+    [
+      47,
+      85,
+      0,
+      86,
+      0,
+      "MODEL"
+    ],
+    [
+      48,
+      86,
+      0,
+      87,
+      0,
+      "MODEL"
+    ],
+    [
+      49,
+      87,
+      0,
+      88,
+      0,
+      "MODEL"
+    ],
+    [
+      50,
+      88,
+      0,
+      31,
+      0,
+      "MODEL"
+    ],
+    [
+      51,
+      88,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      52,
+      60,
+      0,
+      61,
+      0,
+      "MODEL"
+    ],
+    [
+      63,
+      2,
+      1,
+      68,
+      0,
+      "IMAGE"
+    ],
+    [
+      64,
+      28,
+      0,
+      68,
+      2,
+      "INT"
+    ],
+    [
+      65,
+      28,
+      1,
+      68,
+      3,
+      "INT"
+    ],
+    [
+      66,
+      68,
+      0,
+      69,
+      0,
+      "IMAGE"
+    ],
+    [
+      67,
+      65,
+      0,
+      69,
+      1,
+      "VAE"
+    ],
+    [
+      68,
+      28,
+      0,
+      70,
+      0,
+      "INT"
+    ],
+    [
+      69,
+      28,
+      1,
+      70,
+      1,
+      "INT"
+    ],
+    [
+      73,
+      10,
+      2,
+      77,
+      0,
+      "STRING"
+    ],
+    [
+      74,
+      77,
+      0,
+      72,
+      9,
+      "FLOAT"
+    ],
+    [
+      75,
+      88,
+      0,
+      72,
+      0,
+      "MODEL"
+    ],
+    [
+      79,
+      72,
+      0,
+      78,
+      0,
+      "LATENT"
+    ],
+    [
+      80,
+      65,
+      0,
+      78,
+      1,
+      "VAE"
+    ],
+    [
+      84,
+      73,
+      0,
+      74,
+      0,
+      "BBAPI_CONNECTION"
+    ],
+    [
+      92,
+      76,
+      0,
+      53,
+      0,
+      "IMAGE"
+    ],
+    [
+      93,
+      50,
+      0,
+      55,
+      0,
+      "IMAGE"
+    ],
+    [
+      95,
+      55,
+      0,
+      5,
+      1,
+      "IMAGE"
+    ],
+    [
+      97,
+      90,
+      0,
+      103,
+      0,
+      "MODEL"
+    ],
+    [
+      108,
+      93,
+      0,
+      94,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      109,
+      28,
+      0,
+      97,
+      0,
+      "INT"
+    ],
+    [
+      110,
+      28,
+      1,
+      97,
+      1,
+      "INT"
+    ],
+    [
+      111,
+      2,
+      1,
+      98,
+      0,
+      "IMAGE"
+    ],
+    [
+      112,
+      28,
+      0,
+      98,
+      2,
+      "INT"
+    ],
+    [
+      113,
+      28,
+      1,
+      98,
+      3,
+      "INT"
+    ],
+    [
+      114,
+      98,
+      0,
+      99,
+      0,
+      "IMAGE"
+    ],
+    [
+      115,
+      92,
+      0,
+      99,
+      1,
+      "VAE"
+    ],
+    [
+      119,
+      10,
+      2,
+      101,
+      0,
+      "STRING"
+    ],
+    [
+      120,
+      101,
+      0,
+      95,
+      9,
+      "FLOAT"
+    ],
+    [
+      121,
+      88,
+      0,
+      95,
+      0,
+      "MODEL"
+    ],
+    [
+      125,
+      95,
+      0,
+      102,
+      0,
+      "LATENT"
+    ],
+    [
+      126,
+      92,
+      0,
+      102,
+      1,
+      "VAE"
+    ],
+    [
+      7,
+      4,
+      0,
+      3,
+      2,
+      "STRING"
+    ],
+    [
+      3,
+      2,
+      0,
+      3,
+      0,
+      "CODEX_REFERENCES"
+    ],
+    [
+      12,
+      10,
+      0,
+      22,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      13,
+      20,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      14,
+      21,
+      0,
+      22,
+      1,
+      "MODEL"
+    ],
+    [
+      4,
+      2,
+      0,
+      28,
+      1,
+      "CODEX_REFERENCES"
+    ],
+    [
+      11,
+      40,
+      0,
+      29,
+      4,
+      "STRING"
+    ],
+    [
+      2,
+      10,
+      2,
+      29,
+      2,
+      "STRING"
+    ],
+    [
+      5,
+      2,
+      0,
+      29,
+      3,
+      "CODEX_REFERENCES"
+    ],
+    [
+      22,
+      29,
+      0,
+      31,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      23,
+      29,
+      1,
+      31,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      24,
+      30,
+      0,
+      31,
+      3,
+      "LATENT"
+    ],
+    [
+      32,
+      10,
+      0,
+      37,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      33,
+      31,
+      0,
+      37,
+      0,
+      "LATENT"
+    ],
+    [
+      34,
+      36,
+      0,
+      37,
+      1,
+      "LATENT"
+    ],
+    [
+      9,
+      4,
+      2,
+      50,
+      3,
+      "STRING"
+    ],
+    [
+      37,
+      51,
+      0,
+      50,
+      6,
+      "H3_IMAGE_SETTINGS"
+    ],
+    [
+      94,
+      55,
+      0,
+      52,
+      0,
+      "IMAGE"
+    ],
+    [
+      53,
+      10,
+      3,
+      62,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      54,
+      22,
+      0,
+      62,
+      0,
+      "MODEL"
+    ],
+    [
+      55,
+      61,
+      0,
+      62,
+      1,
+      "MODEL"
+    ],
+    [
+      56,
+      40,
+      0,
+      64,
+      2,
+      "STRING"
+    ],
+    [
+      57,
+      10,
+      2,
+      64,
+      0,
+      "STRING"
+    ],
+    [
+      58,
+      79,
+      0,
+      64,
+      3,
+      "INT"
+    ],
+    [
+      59,
+      2,
+      0,
+      64,
+      1,
+      "CODEX_REFERENCES"
+    ],
+    [
+      60,
+      64,
+      0,
+      66,
+      1,
+      "STRING"
+    ],
+    [
+      61,
+      63,
+      0,
+      66,
+      0,
+      "CLIP"
+    ],
+    [
+      62,
+      63,
+      0,
+      67,
+      0,
+      "CLIP"
+    ],
+    [
+      70,
+      10,
+      1,
+      71,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      71,
+      70,
+      0,
+      71,
+      0,
+      "LATENT"
+    ],
+    [
+      72,
+      69,
+      0,
+      71,
+      1,
+      "LATENT"
+    ],
+    [
+      76,
+      66,
+      0,
+      72,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      77,
+      67,
+      0,
+      72,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      78,
+      71,
+      0,
+      72,
+      3,
+      "LATENT"
+    ],
+    [
+      85,
+      40,
+      0,
+      74,
+      3,
+      "STRING"
+    ],
+    [
+      86,
+      10,
+      2,
+      74,
+      1,
+      "STRING"
+    ],
+    [
+      87,
+      28,
+      0,
+      74,
+      5,
+      "INT"
+    ],
+    [
+      88,
+      28,
+      1,
+      74,
+      6,
+      "INT"
+    ],
+    [
+      89,
+      2,
+      0,
+      74,
+      2,
+      "CODEX_REFERENCES"
+    ],
+    [
+      81,
+      10,
+      3,
+      75,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      82,
+      38,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      83,
+      78,
+      0,
+      75,
+      1,
+      "IMAGE"
+    ],
+    [
+      90,
+      10,
+      4,
+      76,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      91,
+      74,
+      0,
+      76,
+      1,
+      "IMAGE"
+    ],
+    [
+      106,
+      96,
+      0,
+      93,
+      1,
+      "STRING"
+    ],
+    [
+      107,
+      91,
+      0,
+      93,
+      0,
+      "CLIP"
+    ],
+    [
+      122,
+      93,
+      0,
+      95,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      123,
+      94,
+      0,
+      95,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      124,
+      100,
+      0,
+      95,
+      3,
+      "LATENT"
+    ],
+    [
+      102,
+      40,
+      0,
+      96,
+      2,
+      "STRING"
+    ],
+    [
+      103,
+      10,
+      2,
+      96,
+      0,
+      "STRING"
+    ],
+    [
+      104,
+      79,
+      0,
+      96,
+      3,
+      "INT"
+    ],
+    [
+      105,
+      2,
+      0,
+      96,
+      1,
+      "CODEX_REFERENCES"
+    ],
+    [
+      116,
+      10,
+      1,
+      100,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      117,
+      97,
+      0,
+      100,
+      0,
+      "LATENT"
+    ],
+    [
+      118,
+      99,
+      0,
+      100,
+      1,
+      "LATENT"
+    ],
+    [
+      98,
+      10,
+      6,
+      104,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      99,
+      62,
+      0,
+      104,
+      0,
+      "MODEL"
+    ],
+    [
+      100,
+      103,
+      0,
+      104,
+      1,
+      "MODEL"
+    ],
+    [
+      127,
+      10,
+      6,
+      105,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      128,
+      75,
+      0,
+      105,
+      0,
+      "IMAGE"
+    ],
+    [
+      129,
+      102,
+      0,
+      105,
+      1,
+      "IMAGE"
+    ],
+    [
+      1,
+      10,
+      2,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      96,
+      79,
+      0,
+      2,
+      3,
+      "INT"
+    ],
+    [
+      131,
+      50,
+      1,
+      55,
+      5,
+      "BOOLEAN"
+    ],
+    [
+      132,
+      52,
+      1,
+      54,
+      5,
+      "BOOLEAN"
+    ],
+    [
+      133,
+      50,
+      1,
+      5,
+      4,
+      "BOOLEAN"
+    ],
+    [
+      134,
+      52,
+      1,
+      5,
+      5,
+      "BOOLEAN"
+    ],
+    [
+      135,
+      106,
+      0,
+      3,
+      3,
+      "STRING"
+    ],
+    [
+      136,
+      104,
+      0,
+      113,
+      0,
+      "MODEL"
+    ],
+    [
+      137,
+      112,
+      0,
+      113,
+      1,
+      "MODEL"
+    ],
+    [
+      138,
+      10,
+      7,
+      113,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      139,
+      113,
+      0,
+      23,
+      0,
+      "MODEL"
+    ],
+    [
+      140,
+      88,
+      0,
+      114,
+      0,
+      "MODEL"
+    ],
+    [
+      141,
+      10,
+      2,
+      114,
+      1,
+      "STRING"
+    ],
+    [
+      142,
+      2,
+      0,
+      114,
+      2,
+      "CODEX_REFERENCES"
+    ],
+    [
+      143,
+      40,
+      0,
+      114,
+      3,
+      "STRING"
+    ],
+    [
+      144,
+      28,
+      0,
+      114,
+      4,
+      "INT"
+    ],
+    [
+      145,
+      28,
+      1,
+      114,
+      5,
+      "INT"
+    ],
+    [
+      146,
+      79,
+      0,
+      114,
+      6,
+      "INT"
+    ],
+    [
+      147,
+      105,
+      0,
+      115,
+      0,
+      "IMAGE"
+    ],
+    [
+      148,
+      114,
+      0,
+      115,
+      1,
+      "IMAGE"
+    ],
+    [
+      149,
+      10,
+      7,
+      115,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      150,
+      115,
+      0,
+      76,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 12,
+      "title": "技术节点",
+      "bounding": [
+        3385,
+        15,
+        2240,
+        728
+      ],
+      "color": "#46576a",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6652526991767046,
+      "offset": [
+        210.2252956732512,
+        393.3884008647262
+      ]
+    },
+    "codex_version": "1.1.0",
+    "workflowVersion": "1.1.1",
+    "codex_unified_revision": 6,
+    "bbaigc_krea_route": 1,
+    "bbaigc_author": "BBAIGC",
+    "bbaigc_product": "image",
+    "bbaigc_version": "1.1.1",
+    "bbaigc_public": true
+  },
+  "version": 0.4
+}
