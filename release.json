@@ -1,11 +1,12 @@
 {
   "id": "image",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "BBAIGC",
-  "workflow": "workflows/BBAIGC_image_V1.1.1.json",
-  "sha256": "67023d81727104ac7a510696587715a67cb33f81962505d13ee6f9a2f7281b9c",
+  "workflow": "workflows/BBAIGC_image_V1.1.2.json",
+  "sha256": "968c32efe2f1146fa847abb385fe2e4292b4a6cad783cee05b7203253a52c4fa",
   "node_versions": {
-    "core": "1.2.2"
+    "core": "1.2.3",
+    "bbapi": "1.1.2"
   },
-  "notes": "语音自动分段与即时输入、BBAIGC标识、按需模型检查及工作流更新。"
+  "notes": "语音按光标输入、参考图身份绑定、Krea 2、原图低降噪修复与真实超分倍率。"
 }

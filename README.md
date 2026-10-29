@@ -4,7 +4,7 @@
 
 ### 一句话创作 · 多模型切换 · 语音输入 · 修复与超分
 
-![版本](https://img.shields.io/badge/版本-V1.1.1-1677ff?style=flat-square)
+![版本](https://img.shields.io/badge/版本-V1.1.2-1677ff?style=flat-square)
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-工作流-18181b?style=flat-square)
 ![Qwen](https://img.shields.io/badge/Qwen_Image-2.1_%2F_Turbo-7c3aed?style=flat-square)
 ![MOSS](https://img.shields.io/badge/MOSS-Image-16a34a?style=flat-square)
