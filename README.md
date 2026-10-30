@@ -4,7 +4,7 @@
 
 ### 像聊天一样表达需求，完成多图编辑与一键生图
 
-![版本](https://img.shields.io/badge/版本-V1.1.4-1677ff?style=flat-square)
+![版本](https://img.shields.io/badge/版本-V1.1.6-1677ff?style=flat-square)
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-工作流-18181b?style=flat-square)
 ![Qwen](https://img.shields.io/badge/Qwen_Image-2.1_%2F_Turbo-7c3aed?style=flat-square)
 ![MOSS](https://img.shields.io/badge/MOSS-Image-16a34a?style=flat-square)
@@ -32,6 +32,8 @@
 | **一套工作台切换六条生成路线** | Qwen 2.1、Turbo、MOSS、Krea 2、Z-Image、BBAPI 各用配套配置，未选分支按需跳过；后面可接修复与超分 |
 
 修复区域新增 **DLSS5 保真增强**，适合保持画面结构、处理清晰度；Image2.1 与 Krea 2 用于需要模型重绘的编辑。DLSS 增强不会按文字改五官或肢体，超分可单独运行。
+
+修复默认选择普通版 Image2.1、2K 输出；普通版/Turbo、步数、CFG、降噪与采样方式在控制中心直接调整。Krea 当前使用 Turbo 权重；模型版本与文件名会明确显示。
 
 LoRA 支持独立开关、模型与强度选择、采样预设及添加槽位。生成原图、修复结果、超分结果分别预览和对比，按需要保存。
 

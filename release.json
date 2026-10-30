@@ -1,12 +1,12 @@
 {
   "id": "image",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "author": "BBAIGC",
-  "workflow": "workflows/BBAIGC_image_V1.1.4.json",
-  "sha256": "fb50737d1cb471c61228f42c69d1ca254b93ab90ab6877a35cd1b2be6c6eca1c",
+  "workflow": "workflows/BBAIGC_image_V1.1.6.json",
+  "sha256": "0d2c77d8674ac309e86a7289adee9fc56119c02a99a8087ce65bff5b096e0295",
   "node_versions": {
-    "core": "1.2.5",
+    "core": "1.2.11",
     "bbapi": "1.1.4"
   },
-  "notes": "新增独立 DLSS5 保真增强路线；保留 Image2.1 与 Krea 语义编辑参数，增强与超分分开设置。"
+  "notes": "补齐普通版/Turbo及采样参数入口，修复默认普通Image2.1并使用2K输出；修正Krea参数保存错位与作者标签遮挡。"
 }
