@@ -1,12 +1,12 @@
 {
   "id": "image",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "author": "BBAIGC",
-  "workflow": "workflows/BBAIGC_image_V1.1.6.json",
-  "sha256": "0d2c77d8674ac309e86a7289adee9fc56119c02a99a8087ce65bff5b096e0295",
+  "workflow": "workflows/BBAIGC_image_V1.1.7.json",
+  "sha256": "3678faef0239020523d6e2a220a8fdaac0c5c00dae56aaebd6cc072d3b650c80",
   "node_versions": {
-    "core": "1.2.11",
+    "core": "1.2.12",
     "bbapi": "1.1.4"
   },
-  "notes": "补齐普通版/Turbo及采样参数入口，修复默认普通Image2.1并使用2K输出；修正Krea参数保存错位与作者标签遮挡。"
+  "notes": "同步共享核心V1.2.12及字幕与视频输入模式兼容，保留图片生成和修复参数。"
 }
