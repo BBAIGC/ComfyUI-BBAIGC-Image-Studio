@@ -1,12 +1,12 @@
 {
   "id": "image",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "author": "BBAIGC",
-  "workflow": "workflows/BBAIGC_image_V1.1.7.json",
-  "sha256": "3678faef0239020523d6e2a220a8fdaac0c5c00dae56aaebd6cc072d3b650c80",
+  "workflow": "workflows/BBAIGC_image_V1.1.8.json",
+  "sha256": "24632f38d05e6620d561f06db5bbaac9d7f259d5247388c4672edd608d8d86f7",
   "node_versions": {
-    "core": "1.2.12",
-    "bbapi": "1.1.4"
+    "core": "1.2.25",
+    "bbapi": "1.1.5"
   },
-  "notes": "同步共享核心V1.2.12及字幕与视频输入模式兼容，保留图片生成和修复参数。"
+  "notes": "修正Nodes 2.0主控制面板下半空白和节点拉高后仍锁小高度，更新共享核心至V1.2.25，保留既有生图与修复默认参数。"
 }

@@ -4,7 +4,7 @@
 
 ### 像聊天一样表达需求，完成多图编辑与一键生图
 
-![版本](https://img.shields.io/badge/版本-V1.1.7-1677ff?style=flat-square)
+![版本](https://img.shields.io/badge/版本-V1.1.8-1677ff?style=flat-square)
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-工作流-18181b?style=flat-square)
 ![Qwen](https://img.shields.io/badge/Qwen_Image-2.1_%2F_Turbo-7c3aed?style=flat-square)
 ![MOSS](https://img.shields.io/badge/MOSS-Image-16a34a?style=flat-square)
