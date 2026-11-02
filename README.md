@@ -4,7 +4,7 @@
 
 ### 像聊天一样表达需求，完成多图编辑与一键生图
 
-![版本](https://img.shields.io/badge/版本-V1.1.8-1677ff?style=flat-square)
+![版本](https://img.shields.io/badge/版本-V1.1.9-1677ff?style=flat-square)
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-工作流-18181b?style=flat-square)
 ![Qwen](https://img.shields.io/badge/Qwen_Image-2.1_%2F_Turbo-7c3aed?style=flat-square)
 ![MOSS](https://img.shields.io/badge/MOSS-Image-16a34a?style=flat-square)
@@ -21,6 +21,10 @@
 > **从表达需求到完成图片：语音／文字 → 参考图绑定 → 按目标模型优化提示词 → 生图／编辑 → 按需修复与超分。**
 >
 > 本地模型路线使用本地模型推理；需要云端图像服务时，可在同一工作台切换 BBAPI。
+
+[H3 与 API 使用说明](https://github.com/BBAIGC/ComfyUI-BBAIGC-MiniMax-H3/blob/main/docs/WORKBENCH_GUIDE.md)
+
+本次更新共享核心至 1.3.0，保留既有生图、修复和超分参数；发布模板使用固定文件名。
 
 ## 最值得用它的四个理由
 
