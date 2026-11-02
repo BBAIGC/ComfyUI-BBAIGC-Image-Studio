@@ -36,7 +36,7 @@ MOSS 原生是文生图模型；本工作台的参考图重绘通过 VAE 编码�
 
 SenseVoice 还需同仓库 `config.yaml`、`tokens.json`、`am.mvn`；整套文件置于同一文件夹。依赖 `onnxruntime`、`kaldi-native-fbank`、`PyYAML`、`numpy`，仅使用 CPU。可用环境变量 `BBAIGC_SENSEVOICE_MODEL_DIR` 指定已有模型目录；兼容旧变量 `CODEX_SENSEVOICE_MODEL_DIR`，两者同时设置时优先采用 BBAIGC 变量。
 
-提示词优化使用本机 [Ollama](https://ollama.com/download)。公开可部署的起点是 [qwen3.5:9b](https://ollama.com/library/qwen3.5)，执行 `ollama pull qwen3.5:9b`，在节点中选实际安装名称。作者的 `uncensored-*` 是自定义本机模型别名，不能假定其他用户可以直接拉取。调用地址优先 `http://127.0.0.1:11434`。
+提示词优化使用本机 [Ollama](https://ollama.com/download)。公开可部署的起点是 [qwen3.5:9b](https://ollama.com/library/qwen3.5)，执行 `ollama pull qwen3.5:9b`，在节点中选实际安装名称。请使用Ollama模型库中可拉取的名称；自定义模型需在当前机器另行创建。调用地址优先 `http://127.0.0.1:11434`。
 
 ## 节点来源
 

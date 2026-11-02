@@ -39,7 +39,7 @@ LoRA 支持独立开关、模型与强度选择、采样预设及添加槽位。
 
 ![BBAIGC 生图工作台总览](docs/assets/workspace.jpg)
 
-> 当前展示真实工作台布局；生成效果图后续补充。
+> 工作台布局总览。
 
 [查看完整工作流总览](docs/assets/workflow-overview.jpg)
 
@@ -111,7 +111,7 @@ git clone https://github.com/BBAIGC/ComfyUI-BBAIGC-Image-Studio
 
 ## 更新与公开包
 
-[release.json](release.json) 记录当前发布版本与下载入口。更新前保留自己的工作流副本；不要上传本机配置、API Key、输出、参考图或生成历史。公开包仅提供代码、脱敏工作流、安装资料与工作流截图。
+[release.json](release.json) 记录当前发布版本与下载入口。更新前保留自己的工作流副本。模型权重与可选组件需按[模型清单](MODELS.md)单独准备。
 
 ## 联系与支持
 
